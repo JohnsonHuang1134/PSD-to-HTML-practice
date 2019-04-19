@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #2d2d30;
+}
+header > nav{
+	width: 1600px;
+	height: 100px;
+	margin: 0 auto;
+}
+header > nav > h1{
+	display: block;
+	width: 75px;
+	height: 31px;
+	background-image: url("../img/images/logo.png");
+	position: absolute;
+	top: 35px;
+	left: 215px;
+}
+header > nav > div{
+	float: right;
+	line-height: 100px;
+	padding-right: 187px;
+}
+header > nav > div > a{
+	text-decoration: none;
+	color: #cdcdcd;
+	font-size: 10px;
+	padding: 0 28px;
+}
