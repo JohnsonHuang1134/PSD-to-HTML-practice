@@ -48,25 +48,25 @@ header > nav > div > a{
 	position: relative;
 }
 .banner > h3{	
-	font-size: 40px;
+	font-size: 2.5vw;
 	position: absolute;
 	top: 32%;
 	left: 30%;
 }
 .banner > p{
-	font-size: 28px;
+	font-size: 1.75vw;
 	position: absolute;
 	top: 41%;
 	left: 27%;
 }
 .banner > a{
-	font-size: 12px;
+	font-size: 0.75vw;
 	position: absolute;
 	color: #fff;
 	text-decoration: none;
 	top: 49%;
 	left: 46%;
-	padding: 15px 17px;
+	padding: 0.5% 1.0%;
 	border: 1px solid #fff;
 	border-radius: 5px;
 }
