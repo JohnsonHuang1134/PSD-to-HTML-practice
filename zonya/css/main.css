@@ -181,3 +181,67 @@ article > .product > .btn > .viewBtn{
 article > .product > .btn > .viewBtn:hover{
 	transform: scale(1.2);
 }
+/*------------------------------------------------------*/
+aside{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #2d2d30;
+}
+aside > .txt{
+	width: 515px;
+	height: 629px;
+	float: left;
+	padding-top: 95px;
+	padding-left: 150px;
+
+	transition: scale 0.3s;
+}
+aside > .txt > h3{
+	font-size: 16px;
+	color: #dadada;
+	padding-bottom: 20px;
+}
+aside > .txt > span{
+	font-size: 20px;
+	color: #a4a4a4;
+	line-height: 28px;
+}
+aside > .txt > p{
+	display: block;
+	width: 250px;
+	font-size: 14px;
+	color: #a4a4a4;
+	padding-top: 36px;
+	padding-bottom: 56px;
+	line-height: 26px;
+}
+aside > .txt > a{
+	font-size: 12px;
+	color: #a4a4a4;
+	display: block;
+	width: 136px;
+	text-decoration: none;
+	padding: 3% 5%;
+	border: 1px solid #a4a4a4;
+	border-radius: 5px;
+}
+aside > .txt > a:hover{
+	transform: scale(1.2);
+}
+aside > .pic{
+	width: 870px;
+	height: 450px;
+	float: left;
+	margin-top: 90px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+	transition: scale 0.3s;
+}
+aside > .pic > a:hover{	
+	transform: scale(1.5);
+}
