@@ -46,6 +46,8 @@ header > nav > div > a{
 	color: #fff;
 	text-align: center;
 	position: relative;
+
+	transition: scale 0.3s;	
 }
 .banner > h3{	
 	font-size: 2.5vw;
@@ -69,6 +71,9 @@ header > nav > div > a{
 	padding: 0.5% 1.0%;
 	border: 1px solid #fff;
 	border-radius: 5px;
+}
+.banner > a:hover{
+	transform: scale(1.2);
 }
 /*------------------------------------------------------*/
 article{
@@ -152,6 +157,7 @@ article > .product > .btn{
 
 	display: flex;
 	justify-content: space-between;
+	transition: scale 0.3s;
 }
 article > .product > .btn > div{
 	width: 159px;
@@ -166,6 +172,12 @@ article > .product > .btn > div > a{
 article > .product > .btn > .startBtn{
 	background-color: #47474d;
 }
+article > .product > .btn > .startBtn:hover{
+	transform: scale(1.2);
+}
 article > .product > .btn > .viewBtn{
 	background-color: #82c6bf;
+}
+article > .product > .btn > .viewBtn:hover{
+	transform: scale(1.2);
 }
