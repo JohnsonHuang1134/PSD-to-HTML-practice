@@ -242,6 +242,30 @@ aside > .pic{
 
 	transition: scale 0.3s;
 }
+aside > .pic > a{
+	display: block;
+	width: 286px;
+	height: 230px;
+	background-image: url("../img/images/pic.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+aside > .pic > a.pic2{
+	height: 219px;
+	background-position: 0 -231px
+}
+aside > .pic > a.pic3{
+	background-position: 0 -460px
+}
+aside > .pic > a.pic4{
+	background-position: 0 -690px
+}
+aside > .pic > a.pic5{
+	background-position: 0 -920px
+}
+aside > .pic > a.pic6{
+	background-position: 0 -1150px
+}
 aside > .pic > a:hover{	
 	transform: scale(1.5);
 }
