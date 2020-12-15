@@ -1,0 +1,72 @@
+@mixin max1200px{
+	@media screen and (max-width: 1200px){
+		@content;
+	}
+}
+@mixin max992px{
+	@media screen and (max-width: 992px){
+		@content;
+	}
+}
+@mixin max768px{
+	@media screen and (max-width: 768px){
+		@content;
+	}
+}
+@mixin max576px{
+	@media screen and (max-width: 576px){
+		@content;
+	}
+}
+@mixin hoverHandler{
+	@media (pointer: fine),
+	(-moz-touch-enabled: 0),
+	screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+		@content;
+	}
+}
+@mixin pos_abs($top , $right , $bottom , $left){
+    position: absolute;
+    top: $top;
+    bottom:  $bottom;
+    right: $right;
+    left: $left;
+}
+@mixin pos_fix($top , $right , $bottom , $left){
+    position: fixed;
+    top: $top;
+    bottom:  $bottom;
+    right: $right;
+    left: $left;
+}
+@mixin primary_btn {
+    color: #fff;
+    border-radius: 3px;
+    background: #6C51E2;
+}
+@mixin secondary_btn {
+    color: #6C51E2;
+    border-radius: 3px;
+    border: 1px solid #6C51E2;
+    background: transparent;
+}
+@mixin cancel_btn {
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+@mixin poa_img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin:auto;
+}
+@mixin d-flex($flex, $wrap, $jc, $ai){
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
