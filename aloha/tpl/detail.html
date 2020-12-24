@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/css/reset.css">
     <link rel="stylesheet" href="../style/css/all.css">
 </head>
 <body>
+    <!-- header start -->
     <header class="header">
         <div class="container">
             <button class="menu_btn"><i class="material-icons menu_icon">menu</i></button>
@@ -37,46 +40,117 @@
             </div>
         </div>
     </header>
+    <!-- header end -->
+    <!-- search start -->
     <div class="search">
         <div class="container">
-            <div class="search_item mt-xl-3 mb-xl-3">
-                <i class="material-icons mt-xl-2 mr-xl-2 mb-xl-2 ml-xl-2">place</i>
-                <div class="search_box">
+            <button class="back_btn mr-1"><i class="material-icons">arrow_back</i></button>
+            <div class="search_item mr-xl-2 mr-0">
+                <i class="material-icons m-xl-2 mx-sm-1">place</i>
+                <div class="search_box desti">
                     <span class="search_box_title font-bold">DESTINATION</span>
+                    <span class="search_box_txt sub_txt">Bangkok</span>
                     <input class="desti_input" type="text" placeholder="Bangkok, Thailand">
                     <ul class="desti_list">
                         <li>
-                            <i class="material-icons">grade</i>
-                            <span>Bangkok</span>
-                            <tt>Thailand</tt>
+                            <i class="material-icons m-xl-2">grade</i>
+                            <div class="desti_txt_box">
+                                <span class="city_txt fz-16">Bangkok</span>
+                                <tt class="country_txt sub_txt">Thailand</tt>
+                            </div>
                         </li>
                         <li>
-                            <i class="material-icons">grade</i>
-                            <span>Osaka</span>
-                            <tt>Japan</tt>
+                            <i class="material-icons m-xl-2">grade</i>
+                            <div class="desti_txt_box">
+                                <span class="city_txt fz-16">Osaka</span>
+                                <tt class="country_txt sub_txt">Japan</tt>
+                            </div>
                         </li>
                         <li>
-                            <i class="material-icons">grade</i>
-                            <span>Roma</span>
-                            <tt>Italy</tt>
+                            <i class="material-icons m-xl-2">grade</i>
+                            <div class="desti_txt_box">
+                                <span class="city_txt fz-16">Roma</span>
+                                <tt class="country_txt sub_txt">Italy</tt>
+                            </div>
                         </li>
                         <li>
-                            <i class="material-icons">grade</i>
-                            <span>Paris</span>
-                            <tt>London</tt>
+                            <i class="material-icons m-xl-2">grade</i>
+                            <div class="desti_txt_box">
+                                <span class="city_txt fz-16">Paris</span>
+                                <tt class="country_txt sub_txt">London</tt>
+                            </div>
                         </li>
                         <li>
-                            <i class="material-icons">grade</i>
-                            <span>Reykjavik</span>
-                            <tt>Iceland</tt>
+                            <i class="material-icons m-xl-2">grade</i>
+                            <div class="desti_txt_box">
+                                <span class="city_txt fz-16">Reykjavik</span>
+                                <tt class="country_txt sub_txt">Iceland</tt>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="search_item"></div>
-            <div class="search_item"></div>
-            <button class="search_btn"></button>
+            <div class="search_item mr-xl-2 mr-0">
+                <i class="material-icons m-xl-2 mx-sm-1">date_range</i>
+                <div class="search_box">
+                    <span class="search_box_title font-bold">Check-in/Check-out</span>
+                    <span class="search_box_txt sub_txt">17 June - 19 June</span>
+                </div>
+            </div>
+            <div class="search_item mr-xl-2 mr-0">
+                <i class="material-icons m-xl-2 mx-sm-1">person</i>
+                <div class="search_box">
+                    <span class="search_box_title font-bold">Gusets</span>
+                    <span class="search_box_txt sub_txt">2 adults・1 room</span>
+                </div>
+            </div>
+            <button class="search_btn mt-xl-3 mb-xl-3 mt-md-2 mb-md-2 fz-16">SEARCH</button>
         </div>
+    </div>
+    <!-- search end -->
+    <div class="scroll_content">
+        <div class="">
+            <div class="container">
+
+            </div>
+        </div>
+        <!-- subscribe start -->
+        <div class="subscribe">
+            <div class="container">
+                <h2 class="subscribe_txt my-md-3 mb-0">Subscribe for Exclusive Offer</h2>
+                <div class="subscribe_bar my-xl-3 mt-2">
+                    <input class="subscribe_input" type="text" placeholder="Your email address">
+                    <button class="subscribe_btn fz-16">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe end -->
+        <!-- footer start -->
+        <footer class="footer fz-14">
+            <div class="container">
+                <div class="footer_info_box my-md-3">
+                    <span class="mr-xl-8 mr-md-0">© 2020 ALOHA, Inc. All rights reserved.</span>
+                    <ul class="footer_link_list">
+                        <li class="mr-xl-3">FAQs</li>
+                        <li class="mr-xl-3">Terms of use</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+                <div class="footer_select_box my-xl-3 my-md-0">
+                    <ul class="select_list">
+                        <li class="select_item">
+                            <i class="material-icons">language</i>
+                            <i class="material-icons">arrow_drop_down</i>
+                        </li>
+                        <li class="select_item">
+                            <i class="material-icons">attach_money</i>
+                            <i class="material-icons">arrow_drop_down</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
     </div>
 </body>
 </html>

@@ -1,20 +1,20 @@
 @mixin max1200px{
-	@media screen and (max-width: 1200px){
+	@media screen and (max-width: 1199px){
 		@content;
 	}
 }
 @mixin max992px{
-	@media screen and (max-width: 992px){
+	@media screen and (max-width: 991px){
 		@content;
 	}
 }
 @mixin max768px{
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 767px){
 		@content;
 	}
 }
 @mixin max576px{
-	@media screen and (max-width: 576px){
+	@media screen and (max-width: 575px){
 		@content;
 	}
 }
