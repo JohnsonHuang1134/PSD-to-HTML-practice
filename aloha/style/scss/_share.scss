@@ -470,6 +470,11 @@
         margin: 0px;
     }
 }
+.m-md-half{
+    @include max992px{
+        margin: 4px;
+    }
+}
 .m-md-1{
     @include max992px{
         margin: 8px;
@@ -519,6 +524,12 @@
 .my-md-0{
     @include max992px{
         margin-top: 0px;
+    }
+}
+.mt-md-half,
+.my-md-half{
+    @include max992px{
+        margin-top: 4px;
     }
 }
 .mt-md-1,
@@ -581,6 +592,12 @@
         margin-right: 0px;
     }
 }
+.mr-md-half,
+.mx-md-half{
+    @include max992px{
+        margin-right: 4px;
+    }
+}
 .mr-md-1,
 .mx-md-1{
     @include max992px{
@@ -639,6 +656,12 @@
 .my-md-0{
     @include max992px{
         margin-bottom: 0px;
+    }
+}
+.mb-md-half,
+.my-md-half{
+    @include max992px{
+        margin-bottom: 4px;
     }
 }
 .mb-md-1,
@@ -701,6 +724,12 @@
         margin-left: 0px;
     }
 }
+.ml-md-half,
+.mx-md-half{
+    @include max992px{
+        margin-left: 4px;
+    }
+}
 .ml-md-1,
 .mx-md-1{
     @include max992px{
@@ -761,6 +790,11 @@
         margin: 0px;
     }
 }
+.m-sm-half{
+    @include max768px{
+        margin: 4px;
+    }
+}
 .m-sm-1{
     @include max768px{
         margin: 8px;
@@ -809,7 +843,13 @@
 .mt-sm-0,
 .my-sm-0{
     @include max768px{
-        margin-top: 8px;
+        margin-top: 0px;
+    }
+}
+.mt-sm-half,
+.my-sm-half{
+    @include max768px{
+        margin-top: 4px;
     }
 }
 .mt-sm-1,
@@ -872,6 +912,12 @@
         margin-right: 0px;
     }
 }
+.mr-sm-half,
+.mx-sm-half{
+    @include max768px{
+        margin-right: 4px;
+    }
+}
 .mr-sm-1,
 .mx-sm-1{
     @include max768px{
@@ -930,6 +976,12 @@
 .my-sm-0{
     @include max768px{
         margin-bottom: 0px;
+    }
+}
+.mb-sm-half,
+.my-sm-half{
+    @include max768px{
+        margin-bottom: 4px;
     }
 }
 .mb-sm-1,
@@ -992,6 +1044,12 @@
         margin-left: 0px;
     }
 }
+.ml-sm-half,
+.mx-sm-half{
+    @include max768px{
+        margin-left: 4px;
+    }
+}
 .ml-sm-1,
 .mx-sm-1{
     @include max768px{
@@ -1052,6 +1110,11 @@
         margin: 0px;
     }
 }
+.m-half{
+    @include max576px{
+        margin: 4px;
+    }
+}
 .m-1{
     @include max576px{
         margin: 8px;
@@ -1101,6 +1164,12 @@
 .my-0{
     @include max576px{
         margin-top: 0px;
+    }
+}
+.mt-half,
+.my-half{
+    @include max576px{
+        margin-top: 4px;
     }
 }
 .mt-1,
@@ -1163,6 +1232,12 @@
         margin-right: 0px;
     }
 }
+.mr-half,
+.mx-half{
+    @include max576px{
+        margin-right: 4px;
+    }
+}
 .mr-1,
 .mx-1{
     @include max576px{
@@ -1223,6 +1298,12 @@
         margin-bottom: 0px;
     }
 }
+.mb-half,
+.my-half{
+    @include max576px{
+        margin-bottom: 4px;
+    }
+}
 .mb-1,
 .my-1{
     @include max576px{
@@ -1281,6 +1362,12 @@
 .mx-0{
     @include max576px{
         margin-left: 0px;
+    }
+}
+.ml-half,
+.mx-half{
+    @include max576px{
+        margin-left: 4px;
     }
 }
 .ml-1,
@@ -1576,6 +1663,64 @@ h3{
     }
     @include max576px{
         height: calc(100% - 112px);
+    }
+}
+.photo{
+    display: flex;
+    height: 435px;
+    .room_photo{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        &.first{
+            width: calc(58% - 4px);
+            background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada1.jpg) no-repeat center/cover;
+            @include max992px{
+                width: calc(58% - 2px);
+            }
+        }
+    }
+    &_mid_box{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(42% - 4px);
+        @include max992px{
+            width: calc(42% - 2px);
+        }
+        .second{
+            height: calc(50% - 4px);
+            background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada2.jpg) no-repeat center/cover;
+        }
+    }
+    &_small_box{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: calc(50% - 4px);
+        .third{
+            width: calc(47% - 4px);
+            background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada3.jpg) no-repeat center/cover;
+            @include max992px{
+                width: calc(47% - 2px);
+            }
+        }
+        .fourth{
+            width: calc(53% - 4px);
+            height: calc(100% - 62px);
+            background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada4.jpg) no-repeat center/cover;
+            @include max992px{
+                width: calc(53% - 2px);
+            }
+        }
+        .show_btn{
+            padding: 16px 0;
+            font-weight: bold;
+            color: #fff;
+            background: #000;
+            border-radius: 4px;
+        }
     }
 }
 /*================================================*/
