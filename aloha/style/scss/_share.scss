@@ -2,6 +2,9 @@
 /*margin*/
 /*================================================*/
 /*================= > 1200=================*/
+.m-xl-half{
+    margin: 4px;
+}
 .m-xl-1{
     margin: 8px;
 }
@@ -28,6 +31,10 @@
 }
 .m-xl-9{
     margin: 72px;
+}
+.mt-xl-half,
+.my-xl-half{
+    margin-top: 4px;
 }
 .mt-xl-1,
 .my-xl-1{
@@ -65,6 +72,10 @@
 .my-xl-9{
     margin-top: 72px;
 }
+.mr-xl-half,
+.mx-xl-half{
+    margin-right: 4px;
+}
 .mr-xl-1,
 .mx-xl-1{
     margin-right: 8px;
@@ -101,6 +112,10 @@
 .mx-xl-9{
     margin-right: 72px;
 }
+.mb-xl-half,
+.my-xl-half{
+    margin-bottom: 4px;
+}
 .mb-xl-1,
 .my-xl-1{
     margin-bottom: 8px;
@@ -136,6 +151,10 @@
 .mb-xl-9,
 .my-xl-9{
     margin-bottom: 72px;
+}
+.ml-xl-half,
+.mx-xl-half{
+    margin-left: 4px;
 }
 .ml-xl-1,
 .mx-xl-1{
@@ -175,1261 +194,1287 @@
 }
 /*================= < 1200=================*/
 .m-lg-0{
-    @include max1200px{
+    @include mw_xl{
         margin: 0px;
     }
 }
+.m-lg-half{
+    @include mw_xl{
+        margin: 4px;
+    }
+}
 .m-lg-1{
-    @include max1200px{
+    @include mw_xl{
         margin: 8px;
     }
 }
 .m-lg-2{
-    @include max1200px{
+    @include mw_xl{
         margin: 16px;
     }
 }
 .m-lg-3{
-    @include max1200px{
+    @include mw_xl{
         margin: 24px;
     }
 }
 .m-lg-4{
-    @include max1200px{
+    @include mw_xl{
         margin: 32px;
     }
 }
 .m-lg-5{
-    @include max1200px{
+    @include mw_xl{
         margin: 40px;
     }
 }
 .m-lg-6{
-    @include max1200px{
+    @include mw_xl{
         margin: 48px;
     }
 }
 .m-lg-7{
-    @include max1200px{
+    @include mw_xl{
         margin: 56px;
     }
 }
 .m-lg-8{
-    @include max1200px{
+    @include mw_xl{
         margin: 64px;
     }
 }
 .m-lg-9{
-    @include max1200px{
+    @include mw_xl{
         margin: 72px;
     }
 }
 .mt-lg-0,
 .my-lg-0{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 0px;
+    }
+}
+.mt-lg-half,
+.my-lg-half{
+    @include mw_xl{
+        margin-top: 4px;
     }
 }
 .mt-lg-1,
 .my-lg-1{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 8px;
     }
 }
 .mt-lg-2,
 .my-lg-2{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 16px;
     }
 }
 .mt-lg-3,
 .my-lg-3{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 24px;
     }
 }
 .mt-lg-4,
 .my-lg-4{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 32px;
     }
 }
 .mt-lg-5,
 .my-lg-5{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 40px;
     }
 }
 .mt-lg-6,
 .my-lg-6{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 48px;
     }
 }
 .mt-lg-7,
 .my-lg-7{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 56px;
     }
 }
 .mt-lg-8,
 .my-lg-8{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 64px;
     }
 }
 .mt-lg-9,
 .my-lg-9{
-    @include max1200px{
+    @include mw_xl{
         margin-top: 72px;
     }
 }
 .mr-lg-0,
 .mx-lg-0{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 0px;
+    }
+}
+.mr-lg-half,
+.mx-lg-half{
+    @include mw_xl{
+        margin-right: 4px;
     }
 }
 .mr-lg-1,
 .mx-lg-1{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 8px;
     }
 }
 .mr-lg-2,
 .mx-lg-2{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 16px;
     }
 }
 .mr-lg-3,
 .mx-lg-3{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 24px;
     }
 }
 .mr-lg-4,
 .mx-lg-4{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 32px;
     }
 }
 .mr-lg-5,
 .mx-lg-5{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 40px;
     }
 }
 .mr-lg-6,
 .mx-lg-6{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 48px;
     }
 }
 .mr-lg-7,
 .mx-lg-7{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 56px;
     }
 }
 .mr-lg-8,
 .mx-lg-8{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 64px;
     }
 }
 .mr-lg-9,
 .mx-lg-9{
-    @include max1200px{
+    @include mw_xl{
         margin-right: 72px;
     }
 }
 .mb-lg-0,
 .my-lg-0{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 0px;
+    }
+}
+.mb-lg-half,
+.my-lg-half{
+    @include mw_xl{
+        margin-bottom: 4px;
     }
 }
 .mb-lg-1,
 .my-lg-1{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 8px;
     }
 }
 .mb-lg-2,
 .my-lg-2{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 16px;
     }
 }
 .mb-lg-3,
 .my-lg-3{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 24px;
     }
 }
 .mb-lg-4,
 .my-lg-4{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 32px;
     }
 }
 .mb-lg-5,
 .my-lg-5{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 40px;
     }
 }
 .mb-lg-6,
 .my-lg-6{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 48px;
     }
 }
 .mb-lg-7,
 .my-lg-7{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 56px;
     }
 }
 .mb-lg-8,
 .my-lg-8{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 64px;
     }
 }
 .mb-lg-9,
 .my-lg-9{
-    @include max1200px{
+    @include mw_xl{
         margin-bottom: 72px;
     }
 }
 .ml-lg-0,
 .mx-lg-0{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 8px;
+    }
+}
+.ml-lg-half,
+.mx-lg-half{
+    @include mw_xl{
+        margin-left: 4px;
     }
 }
 .ml-lg-1,
 .mx-lg-1{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 8px;
     }
 }
 .ml-lg-2,
 .mx-lg-2{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 16px;
     }
 }
 .ml-lg-3,
 .mx-lg-3{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 24px;
     }
 }
 .ml-lg-4,
 .mx-lg-4{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 32px;
     }
 }
 .ml-lg-5,
 .mx-lg-5{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 40px;
     }
 }
 .ml-lg-6,
 .mx-lg-6{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 48px;
     }
 }
 .ml-lg-7,
 .mx-lg-7{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 56px;
     }
 }
 .ml-lg-8,
 .mx-lg-8{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 64px;
     }
 }
 .ml-lg-9,
 .mx-lg-9{
-    @include max1200px{
+    @include mw_xl{
         margin-left: 72px;
     }
 }
 /*================= > 992=================*/
 .m-md-0{
-    @include max992px{
+    @include mw_lg{
         margin: 0px;
     }
 }
 .m-md-half{
-    @include max992px{
+    @include mw_lg{
         margin: 4px;
     }
 }
 .m-md-1{
-    @include max992px{
+    @include mw_lg{
         margin: 8px;
     }
 }
 .m-md-2{
-    @include max992px{
+    @include mw_lg{
         margin: 16px;
     }
 }
 .m-md-3{
-    @include max992px{
+    @include mw_lg{
         margin: 24px;
     }
 }
 .m-md-4{
-    @include max992px{
+    @include mw_lg{
         margin: 32px;
     }
 }
 .m-md-5{
-    @include max992px{
+    @include mw_lg{
         margin: 40px;
     }
 }
 .m-md-6{
-    @include max992px{
+    @include mw_lg{
         margin: 48px;
     }
 }
 .m-md-7{
-    @include max992px{
+    @include mw_lg{
         margin: 56px;
     }
 }
 .m-md-8{
-    @include max992px{
+    @include mw_lg{
         margin: 64px;
     }
 }
 .m-md-9{
-    @include max992px{
+    @include mw_lg{
         margin: 72px;
     }
 }
 .mt-md-0,
 .my-md-0{
-    @include max992px{
+    @include mw_lg{
         margin-top: 0px;
     }
 }
 .mt-md-half,
 .my-md-half{
-    @include max992px{
+    @include mw_lg{
         margin-top: 4px;
     }
 }
 .mt-md-1,
 .my-md-1{
-    @include max992px{
+    @include mw_lg{
         margin-top: 8px;
     }
 }
 .mt-md-2,
 .my-md-2{
-    @include max992px{
+    @include mw_lg{
         margin-top: 16px;
     }
 }
 .mt-md-3,
 .my-md-3{
-    @include max992px{
+    @include mw_lg{
         margin-top: 24px;
     }
 }
 .mt-md-4,
 .my-md-4{
-    @include max992px{
+    @include mw_lg{
         margin-top: 32px;
     }
 }
 .mt-md-5,
 .my-md-5{
-    @include max992px{
+    @include mw_lg{
         margin-top: 40px;
     }
 }
 .mt-md-6,
 .my-md-6{
-    @include max992px{
+    @include mw_lg{
         margin-top: 48px;
     }
 }
 .mt-md-7,
 .my-md-7{
-    @include max992px{
+    @include mw_lg{
         margin-top: 56px;
     }
 }
 .mt-md-8,
 .my-md-8{
-    @include max992px{
+    @include mw_lg{
         margin-top: 64px;
     }
 }
 .mt-md-9,
 .my-md-9{
-    @include max992px{
+    @include mw_lg{
         margin-top: 72px;
     }
 }
 .mr-md-0,
 .mx-md-0{
-    @include max992px{
+    @include mw_lg{
         margin-right: 0px;
     }
 }
 .mr-md-half,
 .mx-md-half{
-    @include max992px{
+    @include mw_lg{
         margin-right: 4px;
     }
 }
 .mr-md-1,
 .mx-md-1{
-    @include max992px{
+    @include mw_lg{
         margin-right: 8px;
     }
 }
 .mr-md-2,
 .mx-md-2{
-    @include max992px{
+    @include mw_lg{
         margin-right: 16px;
     }
 }
 .mr-md-3,
 .mx-md-3{
-    @include max992px{
+    @include mw_lg{
         margin-right: 24px;
     }
 }
 .mr-md-4,
 .mx-md-4{
-    @include max992px{
+    @include mw_lg{
         margin-right: 32px;
     }
 }
 .mr-md-5,
 .mx-md-5{
-    @include max992px{
+    @include mw_lg{
         margin-right: 40px;
     }
 }
 .mr-md-6,
 .mx-md-6{
-    @include max992px{
+    @include mw_lg{
         margin-right: 48px;
     }
 }
 .mr-md-7,
 .mx-md-7{
-    @include max992px{
+    @include mw_lg{
         margin-right: 56px;
     }
 }
 .mr-md-8,
 .mx-md-8{
-    @include max992px{
+    @include mw_lg{
         margin-right: 64px;
     }
 }
 .mr-md-9,
 .mx-md-9{
-    @include max992px{
+    @include mw_lg{
         margin-right: 72px;
     }
 }
 .mb-md-0,
 .my-md-0{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 0px;
     }
 }
 .mb-md-half,
 .my-md-half{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 4px;
     }
 }
 .mb-md-1,
 .my-md-1{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 8px;
     }
 }
 .mb-md-2,
 .my-md-2{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 16px;
     }
 }
 .mb-md-3,
 .my-md-3{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 24px;
     }
 }
 .mb-md-4,
 .my-md-4{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 32px;
     }
 }
 .mb-md-5,
 .my-md-5{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 40px;
     }
 }
 .mb-md-6,
 .my-md-6{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 48px;
     }
 }
 .mb-md-7,
 .my-md-7{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 56px;
     }
 }
 .mb-md-8,
 .my-md-8{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 64px;
     }
 }
 .mb-md-9,
 .my-md-9{
-    @include max992px{
+    @include mw_lg{
         margin-bottom: 72px;
     }
 }
 .ml-md-0,
 .mx-md-0{
-    @include max992px{
+    @include mw_lg{
         margin-left: 0px;
     }
 }
 .ml-md-half,
 .mx-md-half{
-    @include max992px{
+    @include mw_lg{
         margin-left: 4px;
     }
 }
 .ml-md-1,
 .mx-md-1{
-    @include max992px{
+    @include mw_lg{
         margin-left: 8px;
     }
 }
 .ml-md-2,
 .mx-md-2{
-    @include max992px{
+    @include mw_lg{
         margin-left: 16px;
     }
 }
 .ml-md-3,
 .mx-md-3{
-    @include max992px{
+    @include mw_lg{
         margin-left: 24px;
     }
 }
 .ml-md-4,
 .mx-md-4{
-    @include max992px{
+    @include mw_lg{
         margin-left: 32px;
     }
 }
 .ml-md-5,
 .mx-md-5{
-    @include max992px{
+    @include mw_lg{
         margin-left: 40px;
     }
 }
 .ml-md-6,
 .mx-md-6{
-    @include max992px{
+    @include mw_lg{
         margin-left: 48px;
     }
 }
 .ml-md-7,
 .mx-md-7{
-    @include max992px{
+    @include mw_lg{
         margin-left: 56px;
     }
 }
 .ml-md-8,
 .mx-md-8{
-    @include max992px{
+    @include mw_lg{
         margin-left: 64px;
     }
 }
 .ml-md-9,
 .mx-md-9{
-    @include max992px{
+    @include mw_lg{
         margin-left: 72px;
     }
 }
 /*================= < 768=================*/
 .m-sm-0{
-    @include max768px{
+    @include mw_md{
         margin: 0px;
     }
 }
 .m-sm-half{
-    @include max768px{
+    @include mw_md{
         margin: 4px;
     }
 }
 .m-sm-1{
-    @include max768px{
+    @include mw_md{
         margin: 8px;
     }
 }
 .m-sm-2{
-    @include max768px{
+    @include mw_md{
         margin: 16px;
     }
 }
 .m-sm-3{
-    @include max768px{
+    @include mw_md{
         margin: 24px;
     }
 }
 .m-sm-4{
-    @include max768px{
+    @include mw_md{
         margin: 32px;
     }
 }
 .m-sm-5{
-    @include max768px{
+    @include mw_md{
         margin: 40px;
     }
 }
 .m-sm-6{
-    @include max768px{
+    @include mw_md{
         margin: 48px;
     }
 }
 .m-sm-7{
-    @include max768px{
+    @include mw_md{
         margin: 56px;
     }
 }
 .m-sm-8{
-    @include max768px{
+    @include mw_md{
         margin: 64px;
     }
 }
 .m-sm-9{
-    @include max768px{
+    @include mw_md{
         margin: 72px;
     }
 }
 .mt-sm-0,
 .my-sm-0{
-    @include max768px{
+    @include mw_md{
         margin-top: 0px;
     }
 }
 .mt-sm-half,
 .my-sm-half{
-    @include max768px{
+    @include mw_md{
         margin-top: 4px;
     }
 }
 .mt-sm-1,
 .my-sm-1{
-    @include max768px{
+    @include mw_md{
         margin-top: 8px;
     }
 }
 .mt-sm-2,
 .my-sm-2{
-    @include max768px{
+    @include mw_md{
         margin-top: 16px;
     }
 }
 .mt-sm-3,
 .my-sm-3{
-    @include max768px{
+    @include mw_md{
         margin-top: 24px;
     }
 }
 .mt-sm-4,
 .my-sm-4{
-    @include max768px{
+    @include mw_md{
         margin-top: 32px;
     }
 }
 .mt-sm-5,
 .my-sm-5{
-    @include max768px{
+    @include mw_md{
         margin-top: 40px;
     }
 }
 .mt-sm-6,
 .my-sm-6{
-    @include max768px{
+    @include mw_md{
         margin-top: 48px;
     }
 }
 .mt-sm-7,
 .my-sm-7{
-    @include max768px{
+    @include mw_md{
         margin-top: 56px;
     }
 }
 .mt-sm-8,
 .my-sm-8{
-    @include max768px{
+    @include mw_md{
         margin-top: 64px;
     }
 }
 .mt-sm-9,
 .my-sm-9{
-    @include max768px{
+    @include mw_md{
         margin-top: 72px;
     }
 }
 .mr-sm-0,
 .mx-sm-0{
-    @include max768px{
+    @include mw_md{
         margin-right: 0px;
     }
 }
 .mr-sm-half,
 .mx-sm-half{
-    @include max768px{
+    @include mw_md{
         margin-right: 4px;
     }
 }
 .mr-sm-1,
 .mx-sm-1{
-    @include max768px{
+    @include mw_md{
         margin-right: 8px;
     }
 }
 .mr-sm-2,
 .mx-sm-2{
-    @include max768px{
+    @include mw_md{
         margin-right: 16px;
     }
 }
 .mr-sm-3,
 .mx-sm-3{
-    @include max768px{
+    @include mw_md{
         margin-right: 24px;
     }
 }
 .mr-sm-4,
 .mx-sm-4{
-    @include max768px{
+    @include mw_md{
         margin-right: 32px;
     }
 }
 .mr-sm-5,
 .mx-sm-5{
-    @include max768px{
+    @include mw_md{
         margin-right: 40px;
     }
 }
 .mr-sm-6,
 .mx-sm-6{
-    @include max768px{
+    @include mw_md{
         margin-right: 48px;
     }
 }
 .mr-sm-7,
 .mx-sm-7{
-    @include max768px{
+    @include mw_md{
         margin-right: 56px;
     }
 }
 .mr-sm-8,
 .mx-sm-8{
-    @include max768px{
+    @include mw_md{
         margin-right: 64px;
     }
 }
 .mr-sm-9,
 .mx-sm-9{
-    @include max768px{
+    @include mw_md{
         margin-right: 72px;
     }
 }
 .mb-sm-0,
 .my-sm-0{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 0px;
     }
 }
 .mb-sm-half,
 .my-sm-half{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 4px;
     }
 }
 .mb-sm-1,
 .my-sm-1{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 8px;
     }
 }
 .mb-sm-2,
 .my-sm-2{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 16px;
     }
 }
 .mb-sm-3,
 .my-sm-3{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 24px;
     }
 }
 .mb-sm-4,
 .my-sm-4{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 32px;
     }
 }
 .mb-sm-5,
 .my-sm-5{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 40px;
     }
 }
 .mb-sm-6,
 .my-sm-6{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 48px;
     }
 }
 .mb-sm-7,
 .my-sm-7{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 56px;
     }
 }
 .mb-sm-8,
 .my-sm-8{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 64px;
     }
 }
 .mb-sm-9,
 .my-sm-9{
-    @include max768px{
+    @include mw_md{
         margin-bottom: 72px;
     }
 }
 .ml-sm-0,
 .mx-sm-0{
-    @include max768px{
+    @include mw_md{
         margin-left: 0px;
     }
 }
 .ml-sm-half,
 .mx-sm-half{
-    @include max768px{
+    @include mw_md{
         margin-left: 4px;
     }
 }
 .ml-sm-1,
 .mx-sm-1{
-    @include max768px{
+    @include mw_md{
         margin-left: 8px;
     }
 }
 .ml-sm-2,
 .mx-sm-2{
-    @include max768px{
+    @include mw_md{
         margin-left: 16px;
     }
 }
 .ml-sm-3,
 .mx-sm-3{
-    @include max768px{
+    @include mw_md{
         margin-left: 24px;
     }
 }
 .ml-sm-4,
 .mx-sm-4{
-    @include max768px{
+    @include mw_md{
         margin-left: 32px;
     }
 }
 .ml-sm-5,
 .mx-sm-5{
-    @include max768px{
+    @include mw_md{
         margin-left: 40px;
     }
 }
 .ml-sm-6,
 .mx-sm-6{
-    @include max768px{
+    @include mw_md{
         margin-left: 48px;
     }
 }
 .ml-sm-7,
 .mx-sm-7{
-    @include max768px{
+    @include mw_md{
         margin-left: 56px;
     }
 }
 .ml-sm-8,
 .mx-sm-8{
-    @include max768px{
+    @include mw_md{
         margin-left: 64px;
     }
 }
 .ml-sm-9,
 .mx-sm-9{
-    @include max768px{
+    @include mw_md{
         margin-left: 72px;
     }
 }
 /*================= < 576=================*/
 .m-0{
-    @include max576px{
+    @include mw_sm{
         margin: 0px;
     }
 }
 .m-half{
-    @include max576px{
+    @include mw_sm{
         margin: 4px;
     }
 }
 .m-1{
-    @include max576px{
+    @include mw_sm{
         margin: 8px;
     }
 }
 .m-2{
-    @include max576px{
+    @include mw_sm{
         margin: 16px;
     }
 }
 .m-3{
-    @include max576px{
+    @include mw_sm{
         margin: 24px;
     }
 }
 .m-4{
-    @include max576px{
+    @include mw_sm{
         margin: 32px;
     }
 }
 .m-5{
-    @include max576px{
+    @include mw_sm{
         margin: 40px;
     }
 }
 .m-6{
-    @include max576px{
+    @include mw_sm{
         margin: 48px;
     }
 }
 .m-7{
-    @include max576px{
+    @include mw_sm{
         margin: 56px;
     }
 }
 .m-8{
-    @include max576px{
+    @include mw_sm{
         margin: 64px;
     }
 }
 .m-9{
-    @include max576px{
+    @include mw_sm{
         margin: 72px;
     }
 }
 .mt-0,
 .my-0{
-    @include max576px{
+    @include mw_sm{
         margin-top: 0px;
     }
 }
 .mt-half,
 .my-half{
-    @include max576px{
+    @include mw_sm{
         margin-top: 4px;
     }
 }
 .mt-1,
 .my-1{
-    @include max576px{
+    @include mw_sm{
         margin-top: 8px;
     }
 }
 .mt-2,
 .my-2{
-    @include max576px{
+    @include mw_sm{
         margin-top: 16px;
     }
 }
 .mt-3,
 .my-3{
-    @include max576px{
+    @include mw_sm{
         margin-top: 24px;
     }
 }
 .mt-4,
 .my-4{
-    @include max576px{
+    @include mw_sm{
         margin-top: 32px;
     }
 }
 .mt-5,
 .my-5{
-    @include max576px{
+    @include mw_sm{
         margin-top: 40px;
     }
 }
 .mt-6,
 .my-6{
-    @include max576px{
+    @include mw_sm{
         margin-top: 48px;
     }
 }
 .mt-7,
 .my-7{
-    @include max576px{
+    @include mw_sm{
         margin-top: 56px;
     }
 }
 .mt-8,
 .my-8{
-    @include max576px{
+    @include mw_sm{
         margin-top: 64px;
     }
 }
 .mt-9,
 .my-9{
-    @include max576px{
+    @include mw_sm{
         margin-top: 72px;
     }
 }
 .mr-0,
 .mx-0{
-    @include max576px{
+    @include mw_sm{
         margin-right: 0px;
     }
 }
 .mr-half,
 .mx-half{
-    @include max576px{
+    @include mw_sm{
         margin-right: 4px;
     }
 }
 .mr-1,
 .mx-1{
-    @include max576px{
+    @include mw_sm{
         margin-right: 8px;
     }
 }
 .mr-2,
 .mx-2{
-    @include max576px{
+    @include mw_sm{
         margin-right: 16px;
     }
 }
 .mr-3,
 .mx-3{
-    @include max576px{
+    @include mw_sm{
         margin-right: 24px;
     }
 }
 .mr-4,
 .mx-4{
-    @include max576px{
+    @include mw_sm{
         margin-right: 32px;
     }
 }
 .mr-5,
 .mx-5{
-    @include max576px{
+    @include mw_sm{
         margin-right: 40px;
     }
 }
 .mr-6,
 .mx-6{
-    @include max576px{
+    @include mw_sm{
         margin-right: 48px;
     }
 }
 .mr-7,
 .mx-7{
-    @include max576px{
+    @include mw_sm{
         margin-right: 56px;
     }
 }
 .mr-8,
 .mx-8{
-    @include max576px{
+    @include mw_sm{
         margin-right: 64px;
     }
 }
 .mr-9,
 .mx-9{
-    @include max576px{
+    @include mw_sm{
         margin-right: 72px;
     }
 }
 .mb-0,
 .my-0{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 0px;
     }
 }
 .mb-half,
 .my-half{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 4px;
     }
 }
 .mb-1,
 .my-1{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 8px;
     }
 }
 .mb-2,
 .my-2{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 16px;
     }
 }
 .mb-3,
 .my-3{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 24px;
     }
 }
 .mb-4,
 .my-4{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 32px;
     }
 }
 .mb-5,
 .my-5{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 40px;
     }
 }
 .mb-6,
 .my-6{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 48px;
     }
 }
 .mb-7,
 .my-7{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 56px;
     }
 }
 .mb-8,
 .my-8{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 64px;
     }
 }
 .mb-9,
 .my-9{
-    @include max576px{
+    @include mw_sm{
         margin-bottom: 72px;
     }
 }
 .ml-0,
 .mx-0{
-    @include max576px{
+    @include mw_sm{
         margin-left: 0px;
     }
 }
 .ml-half,
 .mx-half{
-    @include max576px{
+    @include mw_sm{
         margin-left: 4px;
     }
 }
 .ml-1,
 .mx-1{
-    @include max576px{
+    @include mw_sm{
         margin-left: 8px;
     }
 }
 .ml-2,
 .mx-2{
-    @include max576px{
+    @include mw_sm{
         margin-left: 16px;
     }
 }
 .ml-3,
 .mx-3{
-    @include max576px{
+    @include mw_sm{
         margin-left: 24px;
     }
 }
 .ml-4,
 .mx-4{
-    @include max576px{
+    @include mw_sm{
         margin-left: 32px;
     }
 }
 .ml-5,
 .mx-5{
-    @include max576px{
+    @include mw_sm{
         margin-left: 40px;
     }
 }
 .ml-6,
 .mx-6{
-    @include max576px{
+    @include mw_sm{
         margin-left: 48px;
     }
 }
 .ml-7,
 .mx-7{
-    @include max576px{
+    @include mw_sm{
         margin-left: 56px;
     }
 }
 .ml-8,
 .mx-8{
-    @include max576px{
+    @include mw_sm{
         margin-left: 64px;
     }
 }
 .ml-9,
 .mx-9{
-    @include max576px{
+    @include mw_sm{
         margin-left: 72px;
     }
 }
 /*================================================*/
 /*font*/
 /*================================================*/
-// h1{
-
-// }
 h2{
     font-size: 32px;
     line-height: 38px;
@@ -1450,6 +1495,14 @@ h3{
     font-size: 16px;
     line-height: 22px;
 }
+.fz-18{
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
 .font-bold{
     font-weight: bold;
 }
@@ -1465,13 +1518,13 @@ h3{
 .container{
     max-width: 1110px;
     margin: auto;
-    @include max1200px{
+    @include mw_xl{
         padding: 0 15px;
     }
-    @include max768px{
+    @include mw_md{
         max-width: 690px;
     }
-    @include max576px{
+    @include mw_sm{
         max-width: 330px;
         padding: 0;
     }
@@ -1490,7 +1543,7 @@ h3{
     }
     .menu_btn{
         display: none;
-        @include max576px{
+        @include mw_sm{
             @include d-flex(flex, nowrap, center, center);
             width: 36px;
             height: 36px;
@@ -1505,7 +1558,7 @@ h3{
     .menu_box{
         display: flex;
         flex-wrap: wrap;
-        @include max576px{
+        @include mw_sm{
             @include pos_abs(0, 100%, auto, auto);
             display: none;
         }
@@ -1549,7 +1602,7 @@ h3{
     }
     .back_btn{
         display: none;
-        @include max576px{
+        @include mw_sm{
             display: block;
             width: 24px;
             height: 24px;
@@ -1563,12 +1616,12 @@ h3{
         width: calc((100% - 150px) / 3);
         background: #fff;
         border-radius: 4px;
-        @include max576px{
+        @include mw_sm{
             width: auto;
             background: transparent;
         }
         .material-icons{
-            @include max576px{
+            @include mw_sm{
                 display: none;
             }
         }
@@ -1577,12 +1630,12 @@ h3{
         }
     }
     &_item + .search_item{
-        @include max576px{
+        @include mw_sm{
             padding-left: 20px;
         }
     }
     &_item + .search_item:before{
-        @include max576px{
+        @include mw_sm{
             content: '・';
             width: 10px;
             height: 12px;
@@ -1597,7 +1650,7 @@ h3{
             width: 100%;
             height: 50%;
             @include d-flex(flex, nowrap, flex-start, center);
-            @include max576px{
+            @include mw_sm{
                 display: none;
             }
         }
@@ -1607,7 +1660,7 @@ h3{
         width: 126px;
         flex: none;
         padding: 17px 32px;
-        @include max576px{
+        @include mw_sm{
             display: none;
         }
     }
@@ -1619,7 +1672,7 @@ h3{
         &:focus + .desti_list{
             display: block;
         }
-        @include max576px{
+        @include mw_sm{
             display: none;
         }
     }
@@ -1646,7 +1699,7 @@ h3{
     }
     .search_box_txt{
         display: none;
-        @include max576px{
+        @include mw_sm{
             display: block;
         }
     }
@@ -1658,26 +1711,61 @@ h3{
     height: calc(100% - 176px);
     overflow-x: hidden;
     overflow-y: auto;
-    @include max768px{
+    @include mw_md{
         height: calc(100% - 160px);
     }
-    @include max576px{
+    @include mw_sm{
         height: calc(100% - 112px);
     }
 }
 .photo{
-    display: flex;
-    height: 435px;
+    @include mw_md{
+        overflow: hidden;
+    }
+    &_large_box{
+        position: relative;
+        display: flex;
+        height: 435px;
+        @include mw_lg{
+            height: 268px;
+        }
+        @include mw_md{
+            height: 247px;
+        }
+        .prev_btn,
+        .next_btn{
+            display: none;
+            width: 24px;
+            height: 24px;
+            @include pos_abs(0, auto, 0, 15px);
+            margin: auto;
+            color: #fff;
+            @include mw_md{
+                display: block;
+            }
+        }
+        .next_btn{
+            right: 15px;
+            left: auto;
+        }
+    }
     .room_photo{
         display: block;
         width: 100%;
         height: 100%;
         border-radius: 4px;
+        @include mw_md{
+            border-radius: 0;
+            flex: none;
+        }
         &.first{
             width: calc(58% - 4px);
             background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada1.jpg) no-repeat center/cover;
-            @include max992px{
+            @include mw_lg{
                 width: calc(58% - 2px);
+            }
+            @include mw_md{
+                width: 100%;
             }
         }
     }
@@ -1685,12 +1773,20 @@ h3{
         display: flex;
         flex-wrap: wrap;
         width: calc(42% - 4px);
-        @include max992px{
+        @include mw_lg{
             width: calc(42% - 2px);
+        }
+        @include mw_md{
+            width: 100%;
+            flex: none;
+            flex-wrap: nowrap;
         }
         .second{
             height: calc(50% - 4px);
             background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada2.jpg) no-repeat center/cover;
+            @include mw_md{
+                height: 100%;
+            }
         }
     }
     &_small_box{
@@ -1699,29 +1795,181 @@ h3{
         flex-wrap: wrap;
         width: 100%;
         height: calc(50% - 4px);
+        @include mw_md{
+            height: 100%;
+            flex: none;
+        }
         .third{
             width: calc(47% - 4px);
             background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada3.jpg) no-repeat center/cover;
-            @include max992px{
+            @include mw_lg{
                 width: calc(47% - 2px);
+            }
+            @include mw_md{
+                width: 100%;
             }
         }
         .fourth{
             width: calc(53% - 4px);
             height: calc(100% - 62px);
             background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada4.jpg) no-repeat center/cover;
-            @include max992px{
+            @include mw_lg{
                 width: calc(53% - 2px);
+                height: calc(100% - 38px);
+            }
+            @include mw_md{
+                width: 100%;
+                height: 100%;
             }
         }
         .show_btn{
             padding: 16px 0;
-            font-weight: bold;
+            font-size: 16px;
             color: #fff;
             background: #000;
             border-radius: 4px;
+            @include mw_lg{
+                padding: 8px 0;
+                font-size: 13px;
+            }
+            @include mw_md{
+                display: none;
+            }
         }
     }
+}
+.intro{
+    &_title{
+        @include d-flex(flex, wrap, flex-start, center);
+        h2{
+            @include mw_md{
+                width: 100%;
+            }
+        }
+    }
+    .comment_point{
+        padding-left: 4px;
+    }
+    .comment_num{
+        &:before{
+            content: '(';
+        }
+        &:after{
+            content: ')';
+        }
+    }
+    &_address{
+        display: block;
+        color: #6C51E2;
+    }
+    &_content{
+        max-width: 635px;
+        @include mw_lg{
+            max-width: 510px;
+        }
+    }
+}
+.selection{
+    .filter{
+        &_list{
+            display: inline-flex;
+            &_item{
+                padding: 8px 16px;
+                background: #F1F0F8;
+            }
+            @include mw_md{
+                display: none;
+            }
+        }
+        .edit_btn{
+            @include secondary_btn;
+            border: 0;
+            @include mw_md{
+                display: none;
+            }
+        }
+    }
+}
+.room{
+    &_info{
+        width: 66%;
+        @include d-flex(flex, nowrap, space-between, center);
+        &_align{
+            @include d-flex(flex, nowrap, center, center);
+        }
+        .type{
+            width: 78%;
+            justify-content: flex-start;
+        }
+        .sleeps{
+            width: 22%;
+        }
+        &_facility{
+            width: calc(78% - 255px);
+            .facility{
+                &_list{
+                    height: 112px;
+                    @include d-flex(flex, wrap, flex-start, flex-start);
+                    flex-direction: column;
+                    align-content: flex-start;
+                }
+                &_item{
+                    @include d-flex(flex, nowrap, flex-start, center);
+                    font-size: 14px;
+                }
+            }
+        }
+        &_capacity{
+            width: 22%;
+            @include d-flex(flex, nowrap, center, center);
+        }
+    }
+    &_amount{
+        width: 34%;
+        @include d-flex(flex, nowrap, space-between, center);
+        .price{
+            width: 46%;
+        }
+        .rooms{
+            width: 44%;
+        }
+    }
+    &_title{
+        display: flex;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #F1F0F8;
+        .room_info{
+
+        }
+        .room_amount{
+
+        }
+    }
+    &_item{
+        padding-top: 20px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #F1F0F8;
+        .room_info{
+            justify-content: flex-start;
+            &_img{
+                position: relative;
+                width: 255px;
+                height: 175px;
+                flex: none;
+                border-radius: 4px 0 0 4px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .room_amount{
+
+        }
+    }
+    &_item:last-child{
+        border: 0;
+    }
+
 }
 /*================================================*/
 /*subscribe*/
@@ -1732,14 +1980,13 @@ h3{
         @include d-flex(flex, wrap, space-between, center);
     }
     &_txt{
-        font-weight: bold;
         font-family: Raleway;
-        @include max1200px{
+        @include mw_xl{
             max-width: 175px;
             font-size: 24px;
             line-height: 36px;
         }
-        @include max576px{
+        @include mw_sm{
             max-width: none;
         }
     }
@@ -1751,10 +1998,10 @@ h3{
         background: #fff;
         border-radius: 3px 0 0 3px;
         padding-left: 21px;
-        @include max992px{
+        @include mw_lg{
             width: 300px;
         }
-        @include max768px{
+        @include mw_md{
             width: 210px;
         }
     }
@@ -1763,7 +2010,7 @@ h3{
         width: 150px;
         padding: 17px 0;
         border-radius: 0 3px 3px 0;
-        @include max576px{
+        @include mw_sm{
             width: 120px;
         }
     }
@@ -1774,16 +2021,16 @@ h3{
 .footer{
     .container{
         @include d-flex(flex, nowrap, space-between, center);
-        @include max992px{
+        @include mw_lg{
             display: block;
         }
     }
     &_info_box{
         display: flex;
-        @include max992px{
+        @include mw_lg{
             justify-content: space-between;
         }
-        @include max576px{
+        @include mw_sm{
             flex-wrap: wrap;
             align-content: center;
             flex-direction: column-reverse;
@@ -1799,7 +2046,7 @@ h3{
                 height: 24px;
             }
         }
-        @include max992px{
+        @include mw_lg{
             display: none;
         }
     }

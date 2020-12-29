@@ -3,6 +3,10 @@
 /*margin*/
 /*================================================*/
 /*================= > 1200=================*/
+.m-xl-half {
+  margin: 4px;
+}
+
 .m-xl-1 {
   margin: 8px;
 }
@@ -37,6 +41,11 @@
 
 .m-xl-9 {
   margin: 72px;
+}
+
+.mt-xl-half,
+.my-xl-half {
+  margin-top: 4px;
 }
 
 .mt-xl-1,
@@ -84,6 +93,11 @@
   margin-top: 72px;
 }
 
+.mr-xl-half,
+.mx-xl-half {
+  margin-right: 4px;
+}
+
 .mr-xl-1,
 .mx-xl-1 {
   margin-right: 8px;
@@ -129,6 +143,11 @@
   margin-right: 72px;
 }
 
+.mb-xl-half,
+.my-xl-half {
+  margin-bottom: 4px;
+}
+
 .mb-xl-1,
 .my-xl-1 {
   margin-bottom: 8px;
@@ -172,6 +191,11 @@
 .mb-xl-9,
 .my-xl-9 {
   margin-bottom: 72px;
+}
+
+.ml-xl-half,
+.mx-xl-half {
+  margin-left: 4px;
 }
 
 .ml-xl-1,
@@ -223,6 +247,12 @@
 @media screen and (max-width: 1199px) {
   .m-lg-0 {
     margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .m-lg-half {
+    margin: 4px;
   }
 }
 
@@ -284,6 +314,13 @@
   .mt-lg-0,
   .my-lg-0 {
     margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mt-lg-half,
+  .my-lg-half {
+    margin-top: 4px;
   }
 }
 
@@ -358,6 +395,13 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .mr-lg-half,
+  .mx-lg-half {
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .mr-lg-1,
   .mx-lg-1 {
     margin-right: 8px;
@@ -428,6 +472,13 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .mb-lg-half,
+  .my-lg-half {
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .mb-lg-1,
   .my-lg-1 {
     margin-bottom: 8px;
@@ -494,6 +545,13 @@
   .ml-lg-0,
   .mx-lg-0 {
     margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ml-lg-half,
+  .mx-lg-half {
+    margin-left: 4px;
   }
 }
 
@@ -1713,6 +1771,15 @@ h3 {
   line-height: 22px;
 }
 
+.fz-18 {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 .font-bold {
   font-weight: bold;
 }
@@ -2115,11 +2182,56 @@ h3 {
   }
 }
 
-.photo {
+@media screen and (max-width: 767px) {
+  .photo {
+    overflow: hidden;
+  }
+}
+
+.photo_large_box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 435px;
+}
+
+@media screen and (max-width: 991px) {
+  .photo_large_box {
+    height: 268px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo_large_box {
+    height: 247px;
+  }
+}
+
+.photo_large_box .prev_btn,
+.photo_large_box .next_btn {
+  display: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: 15px;
+  margin: auto;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .photo_large_box .prev_btn,
+  .photo_large_box .next_btn {
+    display: block;
+  }
+}
+
+.photo_large_box .next_btn {
+  right: 15px;
+  left: auto;
 }
 
 .photo .room_photo {
@@ -2127,6 +2239,15 @@ h3 {
   width: 100%;
   height: 100%;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .photo .room_photo {
+    border-radius: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
 }
 
 .photo .room_photo.first {
@@ -2137,6 +2258,12 @@ h3 {
 @media screen and (max-width: 991px) {
   .photo .room_photo.first {
     width: calc(58% - 2px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo .room_photo.first {
+    width: 100%;
   }
 }
 
@@ -2155,9 +2282,26 @@ h3 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .photo_mid_box {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .photo_mid_box .second {
   height: calc(50% - 4px);
   background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada2.jpg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 767px) {
+  .photo_mid_box .second {
+    height: 100%;
+  }
 }
 
 .photo_small_box {
@@ -2174,6 +2318,15 @@ h3 {
   height: calc(50% - 4px);
 }
 
+@media screen and (max-width: 767px) {
+  .photo_small_box {
+    height: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
 .photo_small_box .third {
   width: calc(47% - 4px);
   background: url(https://hexschool.github.io/webLayoutTraining1st/week8/Rachada3.jpg) no-repeat center/cover;
@@ -2182,6 +2335,12 @@ h3 {
 @media screen and (max-width: 991px) {
   .photo_small_box .third {
     width: calc(47% - 2px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo_small_box .third {
+    width: 100%;
   }
 }
 
@@ -2194,15 +2353,269 @@ h3 {
 @media screen and (max-width: 991px) {
   .photo_small_box .fourth {
     width: calc(53% - 2px);
+    height: calc(100% - 38px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo_small_box .fourth {
+    width: 100%;
+    height: 100%;
   }
 }
 
 .photo_small_box .show_btn {
   padding: 16px 0;
-  font-weight: bold;
+  font-size: 16px;
   color: #fff;
   background: #000;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 991px) {
+  .photo_small_box .show_btn {
+    padding: 8px 0;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo_small_box .show_btn {
+    display: none;
+  }
+}
+
+.intro_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .intro_title h2 {
+    width: 100%;
+  }
+}
+
+.intro .comment_point {
+  padding-left: 4px;
+}
+
+.intro .comment_num:before {
+  content: '(';
+}
+
+.intro .comment_num:after {
+  content: ')';
+}
+
+.intro_address {
+  display: block;
+  color: #6C51E2;
+}
+
+.intro_content {
+  max-width: 635px;
+}
+
+@media screen and (max-width: 991px) {
+  .intro_content {
+    max-width: 510px;
+  }
+}
+
+.selection .filter_list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.selection .filter_list_item {
+  padding: 8px 16px;
+  background: #F1F0F8;
+}
+
+@media screen and (max-width: 767px) {
+  .selection .filter_list {
+    display: none;
+  }
+}
+
+.selection .filter .edit_btn {
+  color: #6C51E2;
+  border-radius: 3px;
+  border: 1px solid #6C51E2;
+  background: transparent;
+  border: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .selection .filter .edit_btn {
+    display: none;
+  }
+}
+
+.room_info {
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room_info_align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room_info .type {
+  width: 78%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.room_info .sleeps {
+  width: 22%;
+}
+
+.room_info_facility {
+  width: calc(78% - 255px);
+}
+
+.room_info_facility .facility_list {
+  height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.room_info_facility .facility_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.room_info_capacity {
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room_amount {
+  width: 34%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room_amount .price {
+  width: 46%;
+}
+
+.room_amount .rooms {
+  width: 44%;
+}
+
+.room_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #F1F0F8;
+}
+
+.room_item {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F1F0F8;
+}
+
+.room_item .room_info {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.room_item .room_info_img {
+  position: relative;
+  width: 255px;
+  height: 175px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  border-radius: 4px 0 0 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.room_item:last-child {
+  border: 0;
 }
 
 /*================================================*/
@@ -2227,7 +2640,6 @@ h3 {
 }
 
 .subscribe_txt {
-  font-weight: bold;
   font-family: Raleway;
 }
 
