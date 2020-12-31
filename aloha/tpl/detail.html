@@ -7,13 +7,12 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/css/reset.css">
     <link rel="stylesheet" href="../style/css/all.css">
 </head>
 <body>
     <!-- header start -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <button class="menu_btn"><i class="material-icons menu_icon">menu</i></button>
             <h1 class="mt-3 mb-3">
@@ -39,10 +38,10 @@
                 <button class="fz-16">Login</button>
             </div>
         </div>
-    </header>
+    </header> -->
     <!-- header end -->
     <!-- search start -->
-    <div class="search">
+    <!-- <div class="search">
         <div class="container">
             <button class="back_btn mr-sm-1"><i class="material-icons">arrow_back</i></button>
             <div class="search_item mr-2 mr-sm-0">
@@ -105,6 +104,96 @@
                 </div>
             </div>
             <button class="search_btn mt-3 mb-3 mt-lg-2 mb-lg-2 fz-16">SEARCH</button>
+        </div>
+    </div> -->
+    <!-- search end -->
+    <!-- header start -->
+    <header class="main_width">
+        <i class="material-icons hab_btn">menu</i>
+        <h1 class="main_logo">ALOHA</h1>
+        <label class="select_box">
+            <i class="material-icons function">language</i>
+            <select name="" id="">
+                <option value="">English</option>
+                <option value="">繁體</option>
+            </select>
+            <i class="material-icons arr">arrow_drop_down</i>
+        </label>
+        <!-- 登入後選單 -->
+        <div class="select_box _member" style="display:none;">
+            <div class="select_member_img">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/profile.jpg?raw=true"
+                    alt="">
+            </div>
+            <span>David Lin</span>
+            <i class="material-icons arr">arrow_drop_down</i>
+        </div>
+        <div class="txt_btn">Sign up</div>
+        <div class="txt_btn">Login</div>
+    </header>
+    <!-- header end -->
+    <!-- search start-->
+    <!-- 加上 _other_state 為非首頁樣式 -->
+    <div class="search_box _other_state">
+        <div class="search_box_width">
+            <!-- 展開選單加上 .active -->
+            <div class="search_box_item">
+                <label class="import_box material-icons" data-icon="location_on">
+                    <input type="text" placeholder="Destination">
+                    <div class="more_title">Destination</div>
+                    <tt>Bangkok</tt>
+                </label>
+                <!-- 下拉 -->
+                <ul class="search_location_list active_item">
+                    <li class="material-icons" data-icon="grade">
+                        <span>Roma</span>
+                        <tt>Italy</tt>
+                    </li>
+                    <li class="material-icons on" data-icon="grade">
+                        <span>Roma</span>
+                        <tt>Italy</tt>
+                    </li>
+                    <li class="material-icons" data-icon="grade">
+                        <span>Roma</span>
+                        <tt>Italy</tt>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box_item">
+                <div class="import_box material-icons material-icons" data-icon="date_range">
+                    <span>Check-in / out</span>
+                    <tt>17 June - 19 June</tt>
+                </div>
+            </div>
+            <!-- 展開選單加上 .active -->
+            <div class="search_box_item">
+                <div class="import_box material-icons" data-icon="person">
+                    <span>Guests</span>
+                    <tt>2 adults・1 room</tt>
+                </div>
+                <!-- 下拉 -->
+                <ul class="search_guest_list active_item">
+                    <li>
+                        <span class="txt">Adult</span>
+                        <button class="material-icons qu_btn">remove</button>
+                        <input type="tel" placeholder="0">
+                        <button class="material-icons qu_btn">add</button>
+                    </li>
+                    <li>
+                        <span class="txt">Child</span>
+                        <button class="material-icons qu_btn">remove</button>
+                        <input type="tel" placeholder="0">
+                        <button class="material-icons qu_btn">add</button>
+                    </li>
+                    <li>
+                        <span class="txt">Room</span>
+                        <button class="material-icons qu_btn">remove</button>
+                        <input type="tel" placeholder="0">
+                        <button class="material-icons qu_btn">add</button>
+                    </li>
+                </ul>
+            </div>
+            <button class="saerch_btn">search</button>
         </div>
     </div>
     <!-- search end -->
@@ -191,11 +280,11 @@
                                         <i class="material-icons fz-18 mr-half mr-xl-1">ac_unit</i>
                                         <span class="facility_txt">Air Conditioner</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">room_service</i>
                                         <span class="facility_txt">Room Service</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">smoke_free</i>
                                         <span class="facility_txt">Smoke Free</span>
                                     </li>
@@ -246,11 +335,11 @@
                                         <i class="material-icons fz-18 mr-half mr-xl-1">ac_unit</i>
                                         <span class="facility_txt">Air Conditioner</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">room_service</i>
                                         <span class="facility_txt">Room Service</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">smoke_free</i>
                                         <span class="facility_txt">Smoke Free</span>
                                     </li>
@@ -301,19 +390,19 @@
                                         <i class="material-icons fz-18 mr-half mr-xl-1">ac_unit</i>
                                         <span class="facility_txt">Air Conditioner</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">kitchen</i>
                                         <span class="facility_txt">Refrigerator</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">room_service</i>
                                         <span class="facility_txt">Room Service</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">local_bar</i>
                                         <span class="facility_txt">Mini Bar</span>
                                     </li>
-                                    <li class="facility_item mb-1 ml-3 ml-xl-0">
+                                    <li class="facility_item mb-1 ml-3 ml-lg-0">
                                         <i class="material-icons fz-18 mr-half mr-xl-1">smoke_free</i>
                                         <span class="facility_txt">Smoke Free</span>
                                     </li>
@@ -344,7 +433,7 @@
             </div>
         </div>
         <!-- subscribe start -->
-        <div class="subscribe">
+        <!-- <div class="subscribe">
             <div class="container">
                 <h2 class="subscribe_txt my-lg-3 mb-sm-0">Subscribe for Exclusive Offer</h2>
                 <div class="subscribe_bar my-3 mt-sm-2">
@@ -352,10 +441,10 @@
                     <button class="subscribe_btn fz-16">SUBSCRIBE</button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- subscribe end -->
         <!-- footer start -->
-        <footer class="footer fz-14">
+        <!-- <footer class="footer fz-14">
             <div class="container">
                 <div class="footer_info_box my-lg-3">
                     <span class="mr-8 mr-lg-0">© 2020 ALOHA, Inc. All rights reserved.</span>
@@ -378,6 +467,47 @@
                     </ul>
                 </div>
             </div>
+        </footer> -->
+        <!-- footer end -->
+        <!-- subscribe start -->
+        <!-- 加上 _other_state 為非首頁樣式 -->
+        <div class="subscribe_box _other_state">
+            <div class="main_width">
+                <h2>Subscribe for
+                    Exclusive Offer</h2>
+                <label class="subscribe_box_item">
+                    <input type="mail" placeholder="Your email address">
+                    <button class="subscribe_btn">subscribe</button>
+                </label>
+            </div>
+        </div>
+        <!-- subscribe end -->
+        <!-- footer start -->
+        <footer class="main_width">
+            <div class="copyright_box">
+                <span>© 2020 ALOHA, Inc. All rights reserved.</span>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Terms of use</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+            <label class="select_box">
+                <i class="material-icons function">language</i>
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">繁體</option>
+                </select>
+                <i class="material-icons arr">arrow_drop_down</i>
+            </label>
+            <label class="select_box">
+                <i class="material-icons function">attach_money</i>
+                <select name="" id="">
+                    <option value="">TWD</option>
+                    <option value="">USD</option>
+                </select>
+                <i class="material-icons arr">arrow_drop_down</i>
+            </label>
         </footer>
         <!-- footer end -->
     </div>

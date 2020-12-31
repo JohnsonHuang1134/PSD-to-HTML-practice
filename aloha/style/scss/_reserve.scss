@@ -1,0 +1,171 @@
+.reserve{
+	padding: 24px 40px;
+	height: calc(100% - 72px);
+	@include mw_sm{
+		padding: 0;
+		height: calc(100% - 102px);
+		h2{
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+	&_group{
+		width: 50%;
+		padding-right: 15px;
+		button{
+			@include primary_btn;
+			width: 100%;
+			padding: 16px 0;
+		}
+		@include mw_sm{
+			width: 100%;
+			padding-top: 24px;
+			padding-left: 15px;
+		}
+	}
+	&_detail{
+		width: 50%;
+		@include mw_sm{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			background: #F1F0F8;
+			padding: 0 15px;
+			.detail_group{
+				display: none;
+			}
+		}
+		.detail_item{
+			padding: 24px;
+			border-bottom: 1px solid #fff;
+			background: #F1F0F8;
+			span{
+				font-weight: bold;
+			}
+			li{
+				color: #00000099;
+				font-size: 14px;
+				line-height: 20px;
+				display: flex;
+				justify-content: space-between;
+			}
+			li+li{
+				margin-top: 8px;
+			}
+			@include mw_sm{
+				padding: 0;
+			}
+		}
+		.detail_total{
+			padding: 24px;
+			display: flex;
+			justify-content: space-between;
+			background: #F1F0F8;
+			color: #00000099;
+			font-size: 16px;
+			line-height: 22px;
+			@include mw_sm{
+				justify-content: flex-start;
+				padding: 20px 0;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.price{
+				color:#000;
+				font-weight: bold;
+			}
+		}
+		.detail_btn{
+			display: none;
+			@include mw_sm{
+				display: flex;
+				align-items: center;
+				color: #6C51E2;
+				font-size: 14px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+
+.reserve_s{
+	padding: 24px 40px;
+	height: calc(100% - 72px);
+	@include mw_sm{
+		padding: 24px 15px;
+		tt{
+			display: block;
+		}
+	}
+	h2{
+		margin-bottom: 32px;
+		@include mw_sm{
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 24px;
+		}
+	}
+	&_group{
+		width: 100%;
+	
+	}
+	&_item{
+		padding: 24px 0;
+		border-top: 1px solid #F1F0F8;
+		
+		li{
+			display: flex;
+		}
+		li+li{
+			margin-top: 16px;
+		}
+		.title{
+			display: inline-block;
+			width: 100%;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: bold;
+			max-width: 190px;
+			@include mw_sm{
+				max-width: 90px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		.txt{
+			display: inline-block;
+			font-size: 16px;
+			line-height: 24px;
+			color: #00000099;
+			@include mw_sm{
+				font-size: 14px;
+				line-height: 20px;
+			}
+			
+		}
+		tt:not(.color_purple){
+			color: #00000099;
+			margin-right: 16px;
+			@include mw_sm{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		&.mod_btn_box{
+			justify-content: flex-end;
+			@include mw_sm{
+				justify-content: flex-end;
+				flex-wrap: wrap;
+			}
+			button{
+				padding: 17px 32px;
+				@include mw_sm{
+					width: 100%;
+					margin-left: 0;
+					margin-bottom: 8px;
+				}
+			}
+		}
+	}
+}

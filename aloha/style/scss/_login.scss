@@ -1,0 +1,144 @@
+.login{
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	@include d_f_center(flex , center ,unset);
+	margin: auto;
+	@include mw_sm{
+		.container{
+			justify-content: flex-end;
+		}
+	}
+	&_bg{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/login.jpg?raw=true')no-repeat center/cover;
+		@include mw_sm{
+			background: none;
+		}
+		&_txt{
+			height: calc( 100% - 72px);
+			@include d_f(flex , unset , unset , unset , wrap);
+			align-content: space-between;
+			padding: 100px 30px 24px 85px;
+			@include mw_md{
+				display: none;
+			}
+			.txt_box{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				.title{
+					color: $text_primary;
+					font-size: 48px;
+					line-height: 64px;
+					font-weight: 900;
+					font-family: $text_family_secondary;
+				}
+				span{
+					color: $text_secondary;
+				}
+			}
+		}
+	}
+	.header{
+		position: relative;
+		padding: 0 85px;
+		top: 0;
+		background: transparent;
+		@include mw_sm{
+			padding: 0 15px;
+			.logo{
+				right: auto;
+			}
+		}
+	}
+	&_txt{
+		color: #00000099;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	&_address{
+		position: relative;
+		background: #121212;
+		color: #FFFFFF;
+		@include d_f_center(inline-flex , center , unset);
+		padding: 8px 16px;
+		border-radius: 3px;
+		@include mw_sm{
+			display: none;
+		}
+		.material-icons{
+			font-size: 18px;
+		}
+	}
+	.close_btn{
+		display: none;
+		@include mw_sm{
+			display: block;
+		}
+	}
+	.login_btn{
+		@include primary_btn;
+		width: 100%;
+		padding: 16px;
+		text-align: center;
+		font-weight: bold;
+	}
+	&_box{
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 85px;
+		@include d_f_center(flex , unset , center);
+		flex-direction: column;	
+
+		@include mw_xl{
+			padding-right: 30px;
+		}
+		@include mw_md{
+			justify-content: flex-start;
+			@include pos_abs(100px , 0px , auto , 0px);
+			margin: auto;
+			max-width: 330px;
+			height: auto;
+			padding: 0;
+		}
+		@include mw_sm{
+			max-width: none;
+			padding: 0 15px;
+		}
+		.mod_checkbox{
+			color: #00000099;
+			font-weight: 400;
+			span{
+				border-color: $bg_secondary;
+			}
+			input:checked ~ span{
+				background: $bg_secondary;
+			}
+			input:checked ~ span::after{
+				border-color: #fff;
+			}
+		}
+		
+		.new_account{
+			width: 100%;
+			text-align: center;
+			color: #00000099;
+			a{
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.mod_inp{
+	width: 100%;
+	height: 55px;
+	border:1px solid #00000060;
+	margin-top: 4px;
+	border-radius: 3px;
+	padding: 0 10px;
+	background: #fff;
+}

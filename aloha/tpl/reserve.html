@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 字行 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="../style/css/reset.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../style/css/all.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrap home" id="app">
+		<div class="header">
+			<div class="container" style="display: none">
+				<button class="menu_btn material-icons">menu</button>
+				<h1 class="logo"><a href="./home.html">ALOHA</a></h1>
+				<ul class="h_menu">
+					<li class="mod_select_box">
+						<span class="mod_select_btn">
+							<i class="material-icons">language</i>
+							<i class="material-icons">arrow_drop_down</i>
+						</span>
+						<ul class="second_menu">
+							<li class="active">繁體中文</li>
+							<li>簡體</li>
+							<li>English</li>
+						</ul>
+						<select class="second_mb_menu">
+							<option value="">繁體中文</option>
+							<option value="">簡體</option>
+							<option value="">English</option>
+						</select>
+					</li>
+					<li><a href="#">Sign up</a></li>
+				</ul>
+				<a class="login_btn fz-16" href="./login.html">Login</a>
+			</div>
+		</div>
+		<div class="scroll_box">
+			<div class="reserve">
+				<div class="container">
+					<div class="reserve_group">
+						<h2>Reservation details</h2>
+						<div class="inp_box mt_xl_3">
+							<span>Name</span>
+							<input class="mod_inp" type="text" name="text" autocapitalize="off">
+						</div>
+						<div class="inp_box mt_xl_2">
+							<span>Email</span>
+							<input class="mod_inp" type="text" name="text" autocapitalize="off">
+						</div>
+						<div class="inp_box mt_xl_2">
+							<span>Phone</span>
+							<input class="mod_inp" type="text" name="text" autocapitalize="off">
+						</div>
+						<button class="log_btn fz-16 mt_xl_3" onclick="document.location.href='./reserve_success.html'">Reserve</button>
+						<p class="fz-14 mt_xl_1 color_purple txt_c">Reserve now, pay at stay</p>
+					</div>
+					<div class="reserve_detail">
+						<div class="detail_group">
+							<div class="detail_item">
+								<span class="fz-16">Booking details</span>
+								<ul class="mt_xl_2">
+									<li>17 June 2020 - 19 June 2020・2 nights</li>
+									<li>2 adults・1 room</li>
+									<li>Rachada Hotel</li>
+								</ul>
+							</div>
+							<div class="detail_item">
+								<span class="fz-16">Price summary</span>
+								<ul class="mt_xl_2">
+									<li>
+										<p>Deluxe Suite with Pool</p>
+										<p>TWD 3,960</p>
+									</li>
+									<li>
+										<p>VAT (7%)</p>
+										<p>TWD 277</p>
+									</li>
+									<li>
+										<p>Property service charge</p>
+										<p>TWD 396</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="detail_total">
+							<span class="mr_xl_1">Total</span>
+							<span class="price">TWD 4,633</span>
+						</div>
+						<a href="#" class="detail_btn">
+							DETAIL
+							<i class="material-icons">expand_more</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container" style="display: none">
+					<div class="qa_box">
+						<span class="cp_right">
+							© 2020 ALOHA, Inc. All rights reserved.
+						</span>
+						<ul class="question">
+							<li>
+								<a href="#">FAQs</a>
+							</li>
+							<li>
+								<a href="#">Terms of use</a>
+							</li>
+							<li>
+								<a href="#">Privacy policy</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="f_menu">
+						<li class="mod_select_box">
+							<span class="mod_select_btn">
+								<i class="material-icons">language</i>
+								<tt>English</tt>
+								<i class="material-icons">arrow_drop_down</i>
+							</span>
+
+							<ul id="second_menu" class="second_menu">
+								<li class="active">繁體中文</li>
+								<li>簡體</li>
+								<li>English</li>
+							</ul>
+						</li>
+						<li class="mod_select_box">
+							<span class="mod_select_btn">
+								<i class="material-icons">language</i>
+								<tt>TWD</tt>
+								<i class="material-icons">arrow_drop_down</i>
+							</span>
+							<ul id="second_menu" class="second_menu">
+								<li class="active">繁體中文</li>
+								<li>簡體</li>
+								<li>English</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

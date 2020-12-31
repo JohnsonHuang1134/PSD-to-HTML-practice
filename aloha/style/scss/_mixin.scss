@@ -1,3 +1,4 @@
+// RWD
 @mixin mw_xl{
 	@media screen and (max-width: 1199px){
 		@content;
@@ -18,11 +19,36 @@
 		@content;
 	}
 }
-@mixin hoverHandler{
+// 手指hover相關
+[class*="_btn"]:not(disable),
+%hand {
+	cursor: pointer;
+	transition: color .3s linear,
+	background-color .3s linear,
+	opacity .3s linear,
+	box-shadow .3s linear,
+	border-color .3s linear;
+}
+%no_hand{
+	cursor: default;
+}
+@mixin hoverHandler($op, $bg, $txt) {
 	@media (pointer: fine),
 	(-moz-touch-enabled: 0),
-	screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+	screen and (-ms-high-contrast: active),
+	(-ms-high-contrast: none) {
+		&:hover{
+			@content;
+			opacity: $op;
+			background-color: $bg;
+			color: $txt;
+		}
+	}
+	&:active {
 		@content;
+		opacity: $op;
+		background-color: $bg;
+		color: $txt;
 	}
 }
 @mixin pos_abs($top , $right , $bottom , $left){
@@ -39,7 +65,32 @@
     right: $right;
     left: $left;
 }
+@mixin d_f($flex, $ai, $jc, $di, $wr) {
+    display: $flex;
+    align-items: $ai;
+	justify-content: $jc;
+	flex-direction: $di;
+	flex-wrap: $wr;
+}
+@mixin d_f_center($flex, $ai, $jc) {
+    display: $flex;
+    align-items: $ai;
+	justify-content: $jc;
+}
+@mixin bg_set($x, $y, $repeat, $size) {
+	background-position: $x $y;
+	background-repeat: $repeat;
+	background-size: $size;
+}
+@mixin omission($line, $height) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+	overflow: hidden;
+	max-height:$height;
+}
 @mixin primary_btn {
+    @include hoverHandler(1, #fff, $text_purple);
     color: #fff;
     border-radius: 3px;
     background: #6C51E2;
@@ -64,9 +115,37 @@
 	left: 0;
 	margin:auto;
 }
-@mixin d-flex($flex, $wrap, $jc, $ai){
-    display: $flex;
-    flex-wrap: $wrap;
-    justify-content: $jc;
-	align-items: $ai;
+// 陰影
+%shadow_primary {
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
 }
+// 動畫
+%transition {
+	transition: all .3s ease-in-out;
+}
+// scroll
+@mixin scrollbar($x, $y) {
+	overflow-x: $x;
+	overflow-y: $y;
+	-webkit-overflow-scrolling: touch;
+}
+// 選取勾勾
+@mixin checktick($width, $height, $x, $y, $boder, $bc) {
+	content: none;
+	display: block;
+	position: absolute;
+	width: $width;
+	height: $height;
+	left: $x;
+	top: $y;
+	border-width: 0 0 $boder $boder;
+	border-style:  solid;
+	border-color: $bc;
+	transform: rotate(-48deg);
+}
+// @mixin d-flex($flex, $wrap, $jc, $ai){
+//     display: $flex;
+//     flex-wrap: $wrap;
+//     justify-content: $jc;
+// 	align-items: $ai;
+// }
