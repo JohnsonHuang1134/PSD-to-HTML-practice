@@ -68,6 +68,10 @@ a:hover {
 	text-decoration: none;
 	color: inherit;
 }
+a{
+	display: block;
+	height: 100%;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

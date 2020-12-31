@@ -310,3 +310,43 @@
         border: 0;
     }
 }
+/*================================================*/
+/*confirm_popup*/
+/*================================================*/
+.confirm{
+    @include pos_fix(auto, 0, -104px, 0);
+    @include d_f(flex, center, space-between, row, nowrap);
+    margin: auto;
+    padding: 0 85px;
+    background: #000000DE;
+    transition: bottom .5s;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+    &.active{
+        bottom: 0;
+    }
+    &_info{
+        @include d_f(flex, center, center, column, nowrap);
+        &_amount{
+            tt{
+                color: rgba(255, 255, 255, .6);
+            }
+        }
+        &_price{
+            font-size: 24px;
+            tt{
+                color: rgba(255, 255, 255, .85);
+            }
+        }
+    }
+    &_btn{
+        .cancel_btn{
+            @include cancel_btn;
+            padding: 17px 32px;
+        }
+        .reserve_btn{
+            @include primary_btn;
+            padding: 17px 32px;
+        }
+    }
+}

@@ -4828,6 +4828,102 @@ footer > .select_box {
   border: 0;
 }
 
+/*================================================*/
+/*confirm_popup*/
+/*================================================*/
+.confirm {
+  position: fixed;
+  top: auto;
+  bottom: -104px;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: auto;
+  padding: 0 85px;
+  background: #000000DE;
+  -webkit-transition: bottom .5s;
+  transition: bottom .5s;
+  border-radius: 8px 8px 0 0;
+  z-index: 1;
+}
+
+.confirm.active {
+  bottom: 0;
+}
+
+.confirm_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.confirm_info_amount tt {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.confirm_info_price {
+  font-size: 24px;
+}
+
+.confirm_info_price tt {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.confirm_btn .cancel_btn {
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 17px 32px;
+}
+
+.confirm_btn .reserve_btn {
+  color: #fff;
+  border-radius: 3px;
+  background: #6C51E2;
+  padding: 17px 32px;
+}
+
+@media (pointer: fine), (-moz-touch-enabled: 0), screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .confirm_btn .reserve_btn:hover {
+    opacity: 1;
+    background-color: #fff;
+    color: #6C51E2;
+  }
+}
+
+.confirm_btn .reserve_btn:active {
+  opacity: 1;
+  background-color: #fff;
+  color: #6C51E2;
+}
+
 .reserve {
   padding: 24px 40px;
   height: calc(100% - 72px);
