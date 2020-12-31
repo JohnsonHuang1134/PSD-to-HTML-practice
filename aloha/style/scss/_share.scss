@@ -2012,6 +2012,9 @@ tt {
 }
 ._other_state + .scroll_box{
     height: calc(100% - 160px);
+    @include mw_sm{
+        height: calc(100% - 100px);
+    }
 }
 .hab_btn{
     @include pos_abs(0, auto, 0, 15px);
@@ -2220,7 +2223,7 @@ header{
                     height: auto;
                     background-color: transparent;
                 }
-                &:not(:last-child):after{
+                &:not(div:last-of-type):after{
                     content: '';
                     position: absolute;
                     width: 1px;

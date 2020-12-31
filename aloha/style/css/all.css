@@ -2188,6 +2188,12 @@ tt {
   height: calc(100% - 160px);
 }
 
+@media screen and (max-width: 575px) {
+  ._other_state + .scroll_box {
+    height: calc(100% - 100px);
+  }
+}
+
 .hab_btn {
   position: absolute;
   top: 0;
@@ -2584,7 +2590,7 @@ header {
   }
 }
 
-.search_box._other_state > .search_box_width > .search_box_item:not(:last-child):after {
+.search_box._other_state > .search_box_width > .search_box_item:not(div:last-of-type):after {
   content: '';
   position: absolute;
   width: 1px;
@@ -5468,6 +5474,7 @@ footer > .select_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: none;
 }
 
 @media screen and (max-width: 1199px) {
