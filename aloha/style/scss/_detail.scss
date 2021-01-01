@@ -303,6 +303,9 @@
             &_num{
                 width: 44%;
                 @include d_f(flex, center, center, row, nowrap);
+                .material-icons{
+                    cursor: pointer;
+                }
             }
         }
     }
