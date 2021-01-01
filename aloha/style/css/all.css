@@ -4830,6 +4830,10 @@ footer > .select_box {
       flex-wrap: nowrap;
 }
 
+.room_item .room_amount_num .material-icons {
+  cursor: pointer;
+}
+
 .room_item:last-child {
   border: 0;
 }
