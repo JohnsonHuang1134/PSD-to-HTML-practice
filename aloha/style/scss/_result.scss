@@ -9,12 +9,12 @@
 	}
 	.container{
 		display: flex;
-		max-width: none;
 		@include mw_xl{
 			margin: 0;
 		}
 		@include mw_sm{
 			flex-wrap: wrap;
+			max-width: none;
 		}
 	}
 

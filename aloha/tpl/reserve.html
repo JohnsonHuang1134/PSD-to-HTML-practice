@@ -14,33 +14,30 @@
 </head>
 
 <body>
-	<div class="wrap home" id="app">
-		<div class="header">
-			<div class="container" style="display: none">
-				<button class="menu_btn material-icons">menu</button>
-				<h1 class="logo"><a href="./home.html"></a></h1>
-				<ul class="h_menu">
-					<li class="mod_select_box">
-						<span class="mod_select_btn">
-							<i class="material-icons">language</i>
-							<i class="material-icons">arrow_drop_down</i>
-						</span>
-						<ul class="second_menu">
-							<li class="active">繁體中文</li>
-							<li>簡體</li>
-							<li>English</li>
-						</ul>
-						<select class="second_mb_menu">
-							<option value="">繁體中文</option>
-							<option value="">簡體</option>
-							<option value="">English</option>
-						</select>
-					</li>
-					<li><a href="#">Sign up</a></li>
-				</ul>
-				<a class="login_btn fz-16" href="./login.html">Login</a>
+	<div class="outside">
+		<header class="main_width">
+			<i class="material-icons hab_btn">menu</i>
+			<h1 class="main_logo"><a href="./home.html"></a></h1>
+			<label class="select_box">
+				<i class="material-icons function">language</i>
+				<select name="" id="">
+					<option value="">English</option>
+					<option value="">繁體</option>
+				</select>
+				<i class="material-icons arr">arrow_drop_down</i>
+			</label>
+			<!-- 登入後選單 -->
+			<div class="select_box _member" style="display:none;">
+				<div class="select_member_img">
+					<img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week8/profile.jpg?raw=true"
+						alt="">
+				</div>
+				<span>David Lin</span>
+				<i class="material-icons arr">arrow_drop_down</i>
 			</div>
-		</div>
+			<div class="txt_btn">Sign up</div>
+			<div class="txt_btn"><a href="./login.html">Login</a></div>
+		</header>
 		<div class="scroll_box">
 			<div class="reserve">
 				<div class="container">
@@ -58,7 +55,8 @@
 							<span>Phone</span>
 							<input class="mod_inp" type="text" name="text" autocapitalize="off">
 						</div>
-						<button class="log_btn fz-16 mt_xl_3" onclick="document.location.href='./reserve_success.html'">Reserve</button>
+						<button class="log_btn fz-16 mt_xl_3"
+							onclick="document.location.href='./reserve_success.html'">Reserve</button>
 						<p class="fz-14 mt_xl_1 color_purple txt_c">Reserve now, pay at stay</p>
 					</div>
 					<div class="reserve_detail">

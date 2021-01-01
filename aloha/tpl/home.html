@@ -42,7 +42,7 @@
             <!-- 展示＆搜尋 -->
             <div class="slider_box">
                 <!-- transform 0 ~ -200% -->
-                <ul class="slider_box_item">
+                <ul id="slider_box_item" class="slider_box_item">
                     <li
                         style="background-image:
                         linear-gradient(to right, #00000061 0%, #00000061 100%),
@@ -60,8 +60,8 @@
                 </ul>
                 <!-- slider按鈕 -->
                 <div class="slider_funtion">
-                    <button class="material-icons slider_btn">keyboard_arrow_left</button>
-                    <button class="material-icons slider_btn">keyboard_arrow_right</button>
+                    <button id="slider_perv" class="material-icons slider_btn">keyboard_arrow_left</button>
+                    <button id="slider_next" class="material-icons slider_btn">keyboard_arrow_right</button>
                 </div>
 
 
@@ -69,7 +69,7 @@
                 <!-- 搜尋 -->
                 <!-- 加上 _other_state 為搜尋後樣式 -->
                 <div class="search_box">
-                    <div class="search_box_width">
+                    <div id="search_box_width" class="search_box_width">
                         <!-- 展開選單加上 .active -->
                         <div class="search_box_item">
                             <label class="import_box material-icons" data-icon="location_on">
@@ -78,7 +78,7 @@
                                 <tt>Bangkok</tt>
                             </label>
                             <!-- 下拉 -->
-                            <ul class="search_location_list active_item">
+                            <ul id="active_item" class="search_location_list active_item">
                                 <li class="material-icons" data-icon="grade">
                                     <span>Roma</span>
                                     <tt>Italy</tt>
@@ -339,6 +339,9 @@
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js'></script>
+	<script src="../js/index.js"></script>
     <!-- js end -->
 </body>
 

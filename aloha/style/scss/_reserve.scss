@@ -1,6 +1,16 @@
 .reserve{
 	padding: 24px 40px;
 	height: calc(100% - 72px);
+	.container{
+		max-width: 730px;
+		display: flex;
+		flex-wrap: wrap;
+		@include mw_sm{
+			.container{
+				flex-wrap: wrap-reverse;
+			}
+		}
+	}
 	@include mw_sm{
 		padding: 0;
 		height: calc(100% - 102px);
