@@ -93,19 +93,22 @@
     @include hoverHandler(1, #fff, $text_purple);
     color: #fff;
     border-radius: 3px;
-    background: #6C51E2;
+	background: #6C51E2;
+	text-transform: uppercase;
 }
 @mixin secondary_btn {
     color: #6C51E2;
     border-radius: 3px;
     border: 1px solid #6C51E2;
-    background: transparent;
+	background: transparent;
+	text-transform: uppercase;
 }
 @mixin cancel_btn {
     color: #fff;
     border-radius: 3px;
     border: 1px solid #fff;
-    background: transparent;
+	background: transparent;
+	text-transform: uppercase;
 }
 @mixin poa_img{
 	position: absolute;
@@ -143,9 +146,3 @@
 	border-color: $bc;
 	transform: rotate(-48deg);
 }
-// @mixin d-flex($flex, $wrap, $jc, $ai){
-//     display: $flex;
-//     flex-wrap: $wrap;
-//     justify-content: $jc;
-// 	align-items: $ai;
-// }

@@ -21,10 +21,10 @@
 .result_list_group .list_item,
 .page_box button {
   cursor: pointer;
-  -webkit-transition: color .3s linear, background-color .3s linear, opacity .3s linear, border-color .3s linear, -webkit-box-shadow .3s linear;
-  transition: color .3s linear, background-color .3s linear, opacity .3s linear, border-color .3s linear, -webkit-box-shadow .3s linear;
-  transition: color .3s linear, background-color .3s linear, opacity .3s linear, box-shadow .3s linear, border-color .3s linear;
-  transition: color .3s linear, background-color .3s linear, opacity .3s linear, box-shadow .3s linear, border-color .3s linear, -webkit-box-shadow .3s linear;
+  -webkit-transition: color .3s linear, background-color .3s linear, opacity .3s linear, border-color .3s linear, -webkit-box-shadow .3s linear;
+  transition: color .3s linear, background-color .3s linear, opacity .3s linear, border-color .3s linear, -webkit-box-shadow .3s linear;
+  transition: color .3s linear, background-color .3s linear, opacity .3s linear, box-shadow .3s linear, border-color .3s linear;
+  transition: color .3s linear, background-color .3s linear, opacity .3s linear, box-shadow .3s linear, border-color .3s linear, -webkit-box-shadow .3s linear;
 }
 
 .search_location_list, .search_guest_list {
@@ -2075,6 +2075,7 @@ h5,
   color: #fff;
   border-radius: 3px;
   background: #6C51E2;
+  text-transform: uppercase;
 }
 
 @media (pointer: fine), (-moz-touch-enabled: 0), screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -2096,6 +2097,7 @@ h5,
   border-radius: 3px;
   border: 1px solid #6C51E2;
   background: transparent;
+  text-transform: uppercase;
 }
 
 .mod_price {
@@ -2162,7 +2164,7 @@ button,
 select,
 textarea,
 tt {
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
   color: #121212;
   font-size: 16px;
 }
@@ -2590,7 +2592,7 @@ header {
   }
 }
 
-.search_box._other_state > .search_box_width > .search_box_item:not(div:last-of-type):after {
+.search_box._other_state > .search_box_width > .search_box_item:not(:nth-last-child(2)):after {
   content: '';
   position: absolute;
   width: 1px;
@@ -2789,6 +2791,7 @@ header {
   color: #fff;
   border-radius: 3px;
   background: #6C51E2;
+  text-transform: uppercase;
   width: 126px;
   height: 56px;
 }
@@ -2889,6 +2892,7 @@ header {
   color: #fff;
   border-radius: 3px;
   background: #6C51E2;
+  text-transform: uppercase;
   width: 150px;
   height: 100%;
   border-radius: 0 4px 4px 0;
@@ -3598,6 +3602,7 @@ footer > .select_box {
   border-radius: 3px;
   border: 1px solid #6C51E2;
   background: transparent;
+  text-transform: uppercase;
   padding: 8px 16px;
   font-size: #00000099;
 }
@@ -3845,6 +3850,7 @@ footer > .select_box {
   border-radius: 3px;
   border: 1px solid #fff;
   background: transparent;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -3958,6 +3964,7 @@ footer > .select_box {
   border-radius: 3px;
   border: 1px solid #fff;
   background: transparent;
+  text-transform: uppercase;
   position: absolute;
   top: 0;
   bottom: auto;
@@ -4487,6 +4494,7 @@ footer > .select_box {
   border-radius: 3px;
   border: 1px solid #6C51E2;
   background: transparent;
+  text-transform: uppercase;
   border: 0;
 }
 
@@ -4910,6 +4918,7 @@ footer > .select_box {
   border-radius: 3px;
   border: 1px solid #fff;
   background: transparent;
+  text-transform: uppercase;
   padding: 17px 32px;
 }
 
@@ -4917,6 +4926,7 @@ footer > .select_box {
   color: #fff;
   border-radius: 3px;
   background: #6C51E2;
+  text-transform: uppercase;
   padding: 17px 32px;
 }
 
@@ -4975,6 +4985,7 @@ footer > .select_box {
   color: #fff;
   border-radius: 3px;
   background: #6C51E2;
+  text-transform: uppercase;
   width: 100%;
   padding: 16px 0;
 }
@@ -5367,6 +5378,7 @@ footer > .select_box {
   color: #fff;
   border-radius: 3px;
   background: #6C51E2;
+  text-transform: uppercase;
   width: 100%;
   padding: 16px;
   text-align: center;
@@ -5739,6 +5751,7 @@ footer > .select_box {
     border-radius: 3px;
     border: 1px solid #fff;
     background: transparent;
+    text-transform: uppercase;
     min-width: 160px;
     padding: 17px 0;
     border-radius: 3px;
@@ -5748,6 +5761,7 @@ footer > .select_box {
     color: #fff;
     border-radius: 3px;
     background: #6C51E2;
+    text-transform: uppercase;
     min-width: 160px;
     padding: 17px 0;
     border-radius: 3px;
