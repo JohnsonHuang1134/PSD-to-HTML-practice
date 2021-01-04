@@ -2223,7 +2223,7 @@ header{
                     height: auto;
                     background-color: transparent;
                 }
-                &:not(div:last-of-type):after{
+                &:not(:nth-last-child(2)):after{
                     content: '';
                     position: absolute;
                     width: 1px;
