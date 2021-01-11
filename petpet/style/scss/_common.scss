@@ -1,0 +1,166 @@
+/*================================================*/
+/*module*/
+/*================================================*/
+._container{
+    max-width: 1110px;
+    margin: auto;
+    @include mw_xl{
+        padding: 0 15px;
+    }
+    @include mw_lg{
+        max-width: 690px;
+    }
+}
+._logo{
+    width: 121px;
+    height: 55px;
+}
+._primary_btn{
+    border-radius: 4px;
+    color: #fff;
+    background: #D54100;
+    border: 1px solid #D5411A;
+}
+/*================================================*/
+/*font*/
+/*================================================*/
+.fz-max{
+    font-size: 48px;
+    line-height: 72px;
+}
+.fz-xxl{
+    font-size: 40px;
+    line-height: 60px;
+}
+.fz-xl{
+    font-size: 32px;
+    line-height: 48px;
+}
+.fz-l{
+    font-size: 28px;
+    line-height: 42px;
+}
+.fz-m{
+    font-size: 24px;
+    line-height: 36px;
+}
+.fz-s{
+    font-size: 20px;
+    line-height: 30px;
+}
+.fz-xs{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fz-xxs{
+    font-size: 14px;
+    line-height: 21px;
+}
+/*================================================*/
+/*header*/
+/*================================================*/
+.header{
+    ._container{
+        @include d_flex(flex, nowrap, space-between, center);
+        @include mw_md{
+            justify-content: center;
+            position: relative;
+        }
+    }
+    ._logo{
+        @include mw_md{
+            margin: 4px 0;
+        }
+    }
+    .menu_btn{
+        display: none;
+        @include mw_md{
+            display: block;
+            color: #F8B52E;
+            @include pos_abs(0, 15px, 0, auto);
+        }
+        .material-icons{
+            font-size: 48px;
+        }
+    }
+    .nav{
+        @include d_flex(flex, nowrap, flex-end, center);
+        @include mw_md{
+            display: none;
+        }
+        &__item{
+            margin-left: 40px;
+        }
+    }
+}
+/*================================================*/
+/*help*/
+/*================================================*/
+.help{
+    background: #F0AD25;
+    ._container{
+        padding: 36px 0;
+        @include mw_xl{
+            padding: 36px 15px;
+        }
+    }
+    &__txt{
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+    &__input_box{
+        width: 700px;
+        height: 48px;
+        @include d_flex(flex, nowrap, flex-start, center);
+        border: 1px solid #CED4DA;
+        border-radius: 4px;
+    }
+    &__input_area{
+        width: calc(100% - 160px);
+        height: 100%;
+        border-radius: 4px 0 0 4px;
+        padding-left: 12px;
+    }
+    &__input_btn{
+        width: 160px;
+        height: 100%;
+        border-radius: 0 4px 4px 0;
+    }
+}
+/*================================================*/
+/*footer*/
+/*================================================*/
+.footer{
+    ._container{
+        @include d_flex(flex, wrap, space-between, flex-start);
+        padding: 60px 0 28px;
+        @include mw_xl{
+            padding: 60px 15px 28px;
+        }
+    }
+    .contact{
+        width: 255px;
+    }
+    .list_title{
+        font-weight: bold;
+        margin-top: 13px;
+        margin-bottom: 36px;
+    }
+    li{
+        margin-bottom: 24px;
+    }
+    &__bottom{
+        width: 100%;
+        margin-top: 84px;
+        @include d_flex(flex, nowrap, space-between, center);
+        .tel{
+            font-weight: bold;
+            @include d_flex(flex, nowrap, flex-start, center);
+            .material-icons{
+                font-size: 18px;
+                margin-right: 11px;
+            }
+        }
+    }
+}
