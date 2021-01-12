@@ -3,6 +3,8 @@
 /*================================================*/
 .search{
     position: relative;
+    max-width: 1280px;
+    margin: auto;
     @include d_flex(flex, nowrap, flex-start, center);
     @include mw_lg{
         flex-direction: column;
