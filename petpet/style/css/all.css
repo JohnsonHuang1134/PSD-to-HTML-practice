@@ -768,6 +768,12 @@
   padding-top: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .popular {
+    padding-top: 60px;
+  }
+}
+
 .popular__sub_title {
   display: block;
   margin-top: 4px;
@@ -778,8 +784,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -792,11 +798,28 @@
   position: relative;
   width: calc((100% - 60px) / 3);
   height: 422px;
+  -webkit-box-shadow: 0 3px 6px #00000029;
+          box-shadow: 0 3px 6px #00000029;
+}
+
+@media screen and (max-width: 767px) {
+  .popular__item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popular__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
 }
 
 .popular__item__banner {
   height: 120px;
-  background: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-2.jpeg) no-repeat center/cover;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
 }
 
 .popular__item__avatar {
@@ -805,6 +828,53 @@
   bottom: auto;
   right: 0;
   left: 0;
+  margin: auto;
+}
+
+.popular__item__name, .popular__item__service {
+  display: block;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.popular__item__btn {
+  display: block;
+  width: 160px;
+  height: 48px;
+  margin: 12px auto 24px;
+}
+
+.popular__item__list_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.popular__item__comment {
+  margin-right: 60px;
+}
+
+.popular__item__amount span {
+  position: relative;
+}
+
+.popular__item__amount span:after {
+  width: 14px;
+  content: attr(data-quantifier);
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: calc(100% + 4px);
   margin: auto;
 }
 /*# sourceMappingURL=all.css.map */

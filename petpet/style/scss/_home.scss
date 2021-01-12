@@ -119,25 +119,68 @@
 /*================================================*/
 .popular{
     padding-top: 80px;
+    @include mw_md{
+        padding-top: 60px;
+    }
     &__sub_title{
         display: block;
         margin-top: 4px;
         margin-bottom: 12px;
     }
     &__box{
-        @include d_flex(flex, nowrap, space-between, center);
+        @include d_flex(flex, wrap, space-between, center);
     }
     &__item{
         position: relative;
         width: calc((100% - 60px) / 3);
         height: 422px;
+        box-shadow: 0 3px 6px #00000029;
+        @include mw_md{
+            width: 100%;
+        }
+        &:not(:last-child){
+            @include mw_md{
+                margin-bottom: 12px;
+            }
+        }
         &__banner{
             height: 120px;
-            background: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-2.jpeg) no-repeat center/cover;
+            margin-bottom: 50px;
+            background-repeat: no-repeat;
+            background-position: center 25%;
+            background-size: cover;
         }
         &__avatar{
             @include pos_abs(70px, 0, auto, 0);
             margin: auto;
+        }
+        &__name,
+        &__service{
+            display: block;
+            text-align: center;
+            margin-top: 4px;
+        }
+        &__btn{
+            display: block;
+            width: 160px;
+            height: 48px;
+            margin: 12px auto 24px;
+        }
+        &__list_box{
+            @include d_flex(flex, nowrap, center, flex-start);
+        }
+        &__comment{
+            margin-right: 60px;
+        }
+        &__amount span{
+            position: relative;
+            &:after{
+                width: 14px;
+                content: attr(data-quantifier);
+                font-size: 14px;
+                @include pos_abs(0, 0, 0, calc(100% + 4px));
+                margin: auto;
+            }
         }
     }
 }
