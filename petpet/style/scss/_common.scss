@@ -10,6 +10,9 @@
     @include mw_lg{
         max-width: 690px;
     }
+    @include mw_md{
+        max-width: 345px;
+    }
 }
 ._logo{
     width: 121px;
@@ -24,37 +27,232 @@
 /*================================================*/
 /*font*/
 /*================================================*/
-.fz-max{
+.fz-48{
     font-size: 48px;
     line-height: 72px;
 }
-.fz-xxl{
+.fz-40{
     font-size: 40px;
     line-height: 60px;
 }
-.fz-xl{
+.fz-32{
     font-size: 32px;
     line-height: 48px;
 }
-.fz-l{
+.fz-28{
     font-size: 28px;
     line-height: 42px;
 }
-.fz-m{
+.fz-24{
     font-size: 24px;
     line-height: 36px;
 }
-.fz-s{
+.fz-20{
     font-size: 20px;
     line-height: 30px;
 }
-.fz-xs{
+.fz-16{
     font-size: 16px;
     line-height: 24px;
 }
-.fz-xxs{
+.fz-14{
     font-size: 14px;
     line-height: 21px;
+}
+.fz-xl-48{
+    @include mw_xl{
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+.fz-xl-40{
+    @include mw_xl{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+.fz-xl-32{
+    @include mw_xl{
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+.fz-xl-28{
+    @include mw_xl{
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+.fz-xl-24{
+    @include mw_xl{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.fz-xl-20{
+    @include mw_xl{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.fz-xl-16{
+    @include mw_xl{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.fz-xl-14{
+    @include mw_xl{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.fz-lg-48{
+    @include mw_lg{
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+.fz-lg-40{
+    @include mw_lg{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+.fz-lg-32{
+    @include mw_lg{
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+.fz-lg-28{
+    @include mw_lg{
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+.fz-lg-24{
+    @include mw_lg{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.fz-lg-20{
+    @include mw_lg{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.fz-lg-16{
+    @include mw_lg{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.fz-lg-14{
+    @include mw_lg{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.fz-md-48{
+    @include mw_md{
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+.fz-md-40{
+    @include mw_md{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+.fz-md-32{
+    @include mw_md{
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+.fz-md-28{
+    @include mw_md{
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+.fz-md-24{
+    @include mw_md{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.fz-md-20{
+    @include mw_md{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.fz-md-16{
+    @include mw_md{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.fz-md-14{
+    @include mw_md{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.fz-sm-48{
+    @include mw_sm{
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+.fz-sm-40{
+    @include mw_sm{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+.fz-sm-32{
+    @include mw_sm{
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+.fz-sm-28{
+    @include mw_sm{
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+.fz-sm-24{
+    @include mw_sm{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.fz-sm-20{
+    @include mw_sm{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.fz-sm-16{
+    @include mw_sm{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.fz-sm-14{
+    @include mw_sm{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.fw-bold{
+    font-weight: bold;
 }
 /*================================================*/
 /*header*/
@@ -104,7 +302,7 @@
             padding: 36px 15px;
         }
     }
-    &__txt{
+    &__sub_title{
         display: block;
         margin-top: 8px;
         margin-bottom: 16px;
@@ -115,6 +313,9 @@
         @include d_flex(flex, nowrap, flex-start, center);
         border: 1px solid #CED4DA;
         border-radius: 4px;
+        @include mw_md{
+            width: 315px;
+        }
     }
     &__input_area{
         width: calc(100% - 160px);
@@ -138,25 +339,40 @@
         @include mw_xl{
             padding: 60px 15px 28px;
         }
+        @include mw_md{
+            padding: 8px 15px 24px;
+        }
     }
     .contact{
         width: 255px;
     }
     .list_title{
-        font-weight: bold;
         margin-top: 13px;
         margin-bottom: 36px;
     }
     li{
         margin-bottom: 24px;
+        @include mw_md{
+            margin-bottom: 0;
+        }
+        &:not(._logo){
+            @include mw_md{
+                display: none;
+            }
+        }
     }
     &__bottom{
         width: 100%;
         margin-top: 84px;
         @include d_flex(flex, nowrap, space-between, center);
+        @include mw_md{
+            margin-top: 0;
+        }
         .tel{
-            font-weight: bold;
             @include d_flex(flex, nowrap, flex-start, center);
+            @include mw_md{
+                display: none;
+            }
             .material-icons{
                 font-size: 18px;
                 margin-right: 11px;
