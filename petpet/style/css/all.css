@@ -879,4 +879,49 @@
   left: calc(100% + 4px);
   margin: auto;
 }
+
+/*================================================*/
+/*reserve*/
+/*================================================*/
+.reserve {
+  padding: 80px 0;
+}
+
+.reserve__sub_title {
+  display: block;
+  margin: 4px 0 12px;
+}
+
+.reserve__img {
+  display: block;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reserve__img.--boarding {
+  width: 32%;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-5.jpeg);
+}
+
+.reserve__img.--grooming {
+  width: 27%;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-6.jpeg);
+}
+
+.reserve__img.--care, .reserve__img.--babysitter {
+  width: 24%;
+  height: 172px;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-7.jpeg);
+}
+
+.reserve__img.--babysitter {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-8.jpeg);
+}
+
+.reserve__img.--training {
+  width: 15%;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-9.jpeg);
+}
 /*# sourceMappingURL=all.css.map */

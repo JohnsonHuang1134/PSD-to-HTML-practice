@@ -186,3 +186,41 @@
         }
     }
 }
+/*================================================*/
+/*reserve*/
+/*================================================*/
+.reserve{
+    padding: 80px 0;
+    &__sub_title{
+        display: block;
+        margin: 4px 0 12px;
+    }
+    &__img{
+        display: block;
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.--boarding{
+            width: 32%;
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-5.jpeg);
+        }
+        &.--grooming{
+            width: 27%;
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-6.jpeg);
+        }
+        &.--care,
+        &.--babysitter{
+            width: 24%;
+            height: 172px;
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-7.jpeg);
+        }
+        &.--babysitter{
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-8.jpeg);
+        }
+        &.--training{
+            width: 15%;
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-9.jpeg);
+        }
+    }
+}
