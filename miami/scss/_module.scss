@@ -1,0 +1,32 @@
+.mod{
+    // mod_normal__btn
+    &_normal__btn{
+        padding: 20px 0;
+        @include fz(S);
+        @include color(txt, secondary);
+        @include color(bg, tertiary);
+        cursor: pointer;
+        &:hover{
+            @include fine{
+                opacity: .8;
+            }
+        }
+        &:active{
+            opacity: .8;
+        }
+    }
+    &_normal__input{
+        @include fz(XS);
+        @include color(txt, primary);
+        @include color(bg, primary);
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+        &::placeholder{
+            @include color(txt, primary);
+        }
+    }
+}

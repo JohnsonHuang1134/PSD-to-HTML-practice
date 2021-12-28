@@ -1,0 +1,320 @@
+.wrap{
+    @include color(txt, primary);
+    @include fz(M);
+    max-width: 1260px;
+    margin: auto;
+    & > div{
+        position: relative;
+        @include color(bg, secondary);
+        &:nth-child(n+3):before{
+            content: '';
+            @include pos_a(tl, 0);
+            width: 100%;
+            height: 30px;
+        }
+        &:nth-child(even):before{
+            @include color(bg, primary);
+        }
+        &:nth-child(odd):before{
+            @include color(bg, secondary);
+        }
+        &.--primary_bg{
+            @include color(bg, primary);
+        }
+    }
+}
+.header{
+    position: relative;
+    @include color(txt, secondary);
+    .container{
+        @include pos_a(trbl, 0);
+        margin: auto;
+    }
+    @at-root .logo{
+        @include pos_a(tl, 55px, 0);
+        @include d_f(flex, center, space-between);
+        width: 100%;
+        height: 76px;
+        // logo__img
+        &__img{
+            width: 115px;
+        }
+        // logo__txt
+        &__txt{
+            cursor: pointer;
+            color: #CCC;
+            &:last-child{
+                position: relative;
+                &:before{
+                    content: '';
+                    @include pos_a(bl, 0);
+                    width: 100%;
+                    height: 1px;
+                    background-image: linear-gradient(to right, #CCC 0%, #CCC 50%, transparent 50%);
+                    background-size: 12px 1px;
+                    background-repeat: repeat-x;
+                }
+            }
+            &:hover{
+                @include fine{
+                    @include color(txt, tertiary);
+                }
+                &:before{
+                    @include fine{
+                        background-image: linear-gradient(to right, #00aaef 0%, #00aaef 50%, transparent 50%);
+                    }
+                }
+            }
+            &:active{
+                @include color(txt, tertiary);
+            }
+        }
+    }
+    // header__list
+    &__list{
+        @include pos_a(bl, 60px, 0);
+        @include d_f(flex, center, flex-start);
+    }
+    // header__item
+    &__item{
+        cursor: pointer;
+        &:hover{
+            @include fine{
+                @include color(txt, tertiary);
+            }
+        }
+        &:active{
+            @include color(txt, tertiary);
+        }
+        & + .header__item{
+            margin-left: 80px;
+        }
+    }
+}
+.intro{
+    .container{
+        @include d_f(flex, flex-start, flex-start);
+        padding: 140px 0;
+    }
+    // intro__title
+    &__title{
+        @at-root h2,
+        h3{
+            @include fz(XL);
+            line-height: 1.25;
+            margin: 0;
+        }
+        width: 40%;
+        .title{
+            // title__special
+            &__special{
+                @include color(txt, tertiary);
+            }
+        }
+    }
+    // intro__content
+    &__content{
+        width: 60%;
+        line-height: 1.5;
+    }
+    // intro__txt
+    &__txt{
+        padding-left: 20px;
+    }
+    // intro__list
+    &__list{
+        margin: 40px 0;
+    }
+    // intro__item
+    &__item{
+        position: relative;
+        padding-left: 15px;
+        &:before{
+            content: attr(data-num);
+            @include pos_a(tl, 0);
+        }
+    }
+}
+.gallery{
+    position: relative;
+    .container{
+        padding-bottom: 90px;
+    }
+    h3{
+        margin-bottom: 90px;
+    }
+    @at-root h3{
+        width: 100%;
+        @include d_f(flex, center, center);
+        span{
+            position: relative;
+            &:before{
+                content: '';
+                @include pos_a(bl, -5px, 0);
+                margin: auto;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(to right, #00aaef 0%, #00aaef 40%, transparent 40%, transparent 60%, #00aaef 60%, #00aaef 100%);
+            }
+            &:after{
+                content: '';
+                @include pos_a(rbl, 0, -15px, 0);
+                margin: auto;
+                width: 20px;
+                height: 14px;
+                background: url(../images/miami_title.svg) center/contain no-repeat;
+            }
+        }
+    }
+    // gallery__item
+    &__item{
+        &.--img{
+            @include d_f(flex, center, flex-start);
+        }
+        & + .gallery__item{
+            margin: 20px 0 30px;
+        }
+    }
+    // gallery__img
+    &__img{
+        height: 260px;
+        margin: 0;
+        &.--large{
+            width: 66%;
+        }
+        &.--half{
+            width: 50%;
+        }
+        &.--small{
+            width: 32%;
+        }
+        & + .gallery__img{
+            margin-left: 2%;
+        }
+    }
+    // gallery__special
+    &__special{
+        @include color(txt, tertiary);
+    }
+    .mod_normal__btn{
+        display: block;
+        margin: auto;
+        width: 190px;
+    }
+}
+.consultation{
+    .container{
+        @include d_f(flex, flex-start, space-between);
+        flex-wrap: wrap;
+        padding-bottom: 130px;
+    }
+    h3{
+        margin-bottom: 130px;
+    }
+    // consultation__title
+    &__title{
+        width: 45%;
+        @at-root h4{
+            @include fz(L);
+        }
+    }
+    // consultation__txt
+    &__txt{
+        @include fz(XS);
+        line-height: 1.8;
+        margin-top: 40px;
+    }
+    // consultation__content
+    &__content{
+        width: 40%;
+    }
+    .mod_normal__btn{
+        @include fz(XS);
+        width: 100%;
+    }
+}
+.testimonials{
+    .container{
+        padding-bottom: 100px;
+    }
+    h3{
+        margin-bottom: 90px;
+    }
+    // testimonials__list
+    &__list{
+        @include d_f(flex, flex-start, space-between);
+    }
+    // testimonials__item
+    &__item{
+        width: 30%;
+        @at-root .liberty{
+            text-align: center;
+            // liberty__img
+            &__img{
+                margin: auto;
+            }
+            // liberty__intro
+            &__intro{
+                display: block;
+                color: #696973;
+                &.--name{
+                    margin: 10px 0;
+                    @include color(txt, primary);
+                }
+            }
+            // liberty__txt
+            &__txt{
+                margin-top: 40px;
+                line-height: 1.25;
+            }
+        }
+    }
+}
+.contact{
+    .container{
+        @include d_f(flex, center, space-between);
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    h3{
+        margin-bottom: 130px;
+    }
+    // contact__title
+    &__title{
+        width: 40%;
+    }
+    // contact__list
+    &__list{
+
+    }
+    // contact__item
+    &__item{
+        & + &{
+            margin-top: 40px;
+        }
+    }
+    // contact__txt
+    &__txt{
+        display: block;
+        & + &{
+            margin-top: 10px;
+        }
+    }
+    // contact__content
+    &__content{
+        width: 40%;
+        .mod_normal__btn{
+            width: 100%;
+        }
+    }
+}
+.footer{
+    position: relative;
+    // footer__txt
+    &__txt{
+        @include pos_a(bl, 70px, 0);
+        @include color(txt, secondary);
+        text-align: center;
+        width: 100%;
+    }
+}
