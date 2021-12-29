@@ -143,14 +143,16 @@
     // intro__list
     &__list{
         margin: 40px 0;
+        counter-reset: num;
     }
     // intro__item
     &__item{
         position: relative;
         padding-left: 15px;
         &:before{
-            content: attr(data-num);
             @include pos_a(tl, 0);
+            counter-increment:num;
+            content:counter(num) '. ';
         }
     }
 }

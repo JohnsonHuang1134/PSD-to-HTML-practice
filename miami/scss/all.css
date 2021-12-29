@@ -655,6 +655,7 @@ h3 {
 
 .intro__list {
   margin: 40px 0;
+  counter-reset: num;
 }
 
 .intro__item {
@@ -663,10 +664,11 @@ h3 {
 }
 
 .intro__item:before {
-  content: attr(data-num);
   position: absolute;
   top: 0;
   left: 0;
+  counter-increment: num;
+  content: counter(num) ". ";
 }
 
 .gallery {
