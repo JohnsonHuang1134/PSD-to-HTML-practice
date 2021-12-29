@@ -96,3 +96,15 @@ $bg_color: (
 		@content;
 	}
 }
+
+
+@mixin hover{
+    &:hover{
+        @include fine{
+            @content;
+        }
+    }
+    &:active{
+        @content;
+    }
+}

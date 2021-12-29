@@ -1,20 +1,17 @@
 .mod{
     // mod_normal__btn
     &_normal__btn{
-        padding: 20px 0;
         @include fz(S);
         @include color(txt, secondary);
         @include color(bg, tertiary);
+        padding: 20px 0;
+        width: 100%;
         cursor: pointer;
-        &:hover{
-            @include fine{
-                opacity: .8;
-            }
-        }
-        &:active{
+        @include hover{
             opacity: .8;
         }
     }
+    // mod_normal__input
     &_normal__input{
         @include fz(XS);
         @include color(txt, primary);

@@ -9,17 +9,15 @@
         &:nth-child(n+3):before{
             content: '';
             @include pos_a(tl, 0);
+            @include color(bg, primary);
             width: 100%;
             height: 30px;
         }
-        &:nth-child(even):before{
-            @include color(bg, primary);
-        }
-        &:nth-child(odd):before{
-            @include color(bg, secondary);
-        }
         &.--primary_bg{
             @include color(bg, primary);
+            &:before{
+                @include color(bg, secondary);
+            }
         }
     }
 }
@@ -61,18 +59,11 @@
                     background-repeat: repeat-x;
                 }
             }
-            &:hover{
-                @include fine{
-                    @include color(txt, tertiary);
-                }
-                &:before{
-                    @include fine{
-                        background-image: linear-gradient(to right, #00aaef 0%, #00aaef 50%, transparent 50%);
-                    }
-                }
-            }
-            &:active{
+            @include hover{
                 @include color(txt, tertiary);
+                &:before{
+                    background-image: linear-gradient(to right, #00aaef 0%, #00aaef 50%, transparent 50%);
+                }
             }
         }
     }
@@ -97,15 +88,10 @@
             margin: 10px 0;
             text-shadow: 1px 1px 0 #000;
         }
-        &:hover{
-            @include fine{
-                @include color(txt, tertiary);
-            }
-        }
-        &:active{
+        @include hover{
             @include color(txt, tertiary);
         }
-        & + .header__item{
+        & + &{
             margin-left: 80px;
             @include mw(L){
                 margin: 0;
@@ -213,7 +199,7 @@
                 display: block;
             }
         }
-        & + .gallery__item{
+        & + &{
             margin: 20px 0 30px;
             @include mw(L){
                 margin: 10px 0;
@@ -251,7 +237,7 @@
                 width: 100%;
             }
         }
-        & + .gallery__img{
+        & + &{
             margin-left: 2%;
             @include mw(XS){
                 margin: {
@@ -315,7 +301,6 @@
     }
     .mod_normal__btn{
         @include fz(XS);
-        width: 100%;
     }
 }
 .testimonials{
@@ -420,9 +405,6 @@
         @include mw(XS){
             width: 100%;
             margin-top: 20px;
-        }
-        .mod_normal__btn{
-            width: 100%;
         }
     }
 }

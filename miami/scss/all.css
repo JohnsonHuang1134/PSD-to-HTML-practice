@@ -407,10 +407,11 @@ a {
 }
 
 .mod_normal__btn {
-  padding: 20px 0;
   font-size: 14px;
   color: #FFF;
   background-color: #00aaef;
+  padding: 20px 0;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -457,20 +458,17 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #EEE;
   width: 100%;
   height: 30px;
 }
 
-.wrap > div:nth-child(even):before {
-  background-color: #EEE;
-}
-
-.wrap > div:nth-child(odd):before {
-  background-color: #FFF;
-}
-
 .wrap > div.--primary_bg {
   background-color: #EEE;
+}
+
+.wrap > div.--primary_bg:before {
+  background-color: #FFF;
 }
 
 .header {
@@ -539,9 +537,6 @@ a {
   .logo__txt:hover {
     color: #00aaef;
   }
-}
-
-@media (pointer: fine) and (max-resolution: 2dppx), screen and (pointer: fine) and (-webkit-max-device-pixel-ratio: 2), (-moz-touch-enabled: 0) {
   .logo__txt:hover:before {
     background-image: linear-gradient(to right, #00aaef 0%, #00aaef 50%, transparent 50%);
   }
@@ -549,6 +544,10 @@ a {
 
 .logo__txt:active {
   color: #00aaef;
+}
+
+.logo__txt:active:before {
+  background-image: linear-gradient(to right, #00aaef 0%, #00aaef 50%, transparent 50%);
 }
 
 .header__list {
@@ -887,7 +886,6 @@ h4 {
 
 .consultation .mod_normal__btn {
   font-size: 12px;
-  width: 100%;
 }
 
 .testimonials .container {
@@ -1031,10 +1029,6 @@ h4 {
     width: 100%;
     margin-top: 20px;
   }
-}
-
-.contact__content .mod_normal__btn {
-  width: 100%;
 }
 
 .footer {
