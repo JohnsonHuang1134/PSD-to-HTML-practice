@@ -369,6 +369,24 @@ img {
   margin: auto;
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
 ol,
 ul {
   list-style: none;
@@ -381,6 +399,11 @@ button {
 
 body {
   background: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .mod_normal__btn {
@@ -479,9 +502,21 @@ body {
   width: 115px;
 }
 
+@media screen and (max-width: 599px) {
+  .logo__img {
+    width: 55px;
+  }
+}
+
 .logo__txt {
   cursor: pointer;
   color: #CCC;
+}
+
+@media screen and (max-width: 599px) {
+  .logo__txt {
+    font-size: 12px;
+  }
 }
 
 .logo__txt:last-child {
@@ -525,8 +560,27 @@ body {
   justify-content: flex-start;
 }
 
-.header__item {
-  cursor: pointer;
+@media screen and (max-width: 1023px) {
+  .header__list {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header__list {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__item {
+    width: 30%;
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 1px 1px 0 #000;
+  }
 }
 
 @media (pointer: fine) and (max-resolution: 2dppx), screen and (pointer: fine) and (-webkit-max-device-pixel-ratio: 2), (-moz-touch-enabled: 0) {
@@ -543,6 +597,12 @@ body {
   margin-left: 80px;
 }
 
+@media screen and (max-width: 1023px) {
+  .header__item + .header__item {
+    margin: 0;
+  }
+}
+
 .intro .container {
   display: flex;
   align-items: flex-start;
@@ -550,8 +610,22 @@ body {
   padding: 140px 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .intro .container {
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+}
+
 .intro__title {
   width: 40%;
+}
+
+@media screen and (max-width: 1023px) {
+  .intro__title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 h2,
@@ -568,6 +642,12 @@ h3 {
 .intro__content {
   width: 60%;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1023px) {
+  .intro__content {
+    width: 100%;
+  }
 }
 
 .intro__txt {
@@ -598,8 +678,20 @@ h3 {
   padding-bottom: 90px;
 }
 
+@media screen and (max-width: 1023px) {
+  .gallery .container {
+    padding-bottom: 40px;
+  }
+}
+
 .gallery h3 {
   margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery h3 {
+    margin-bottom: 40px;
+  }
 }
 
 h3 {
@@ -642,8 +734,20 @@ h3 span:after {
   justify-content: flex-start;
 }
 
+@media screen and (max-width: 599px) {
+  .gallery__item.--img {
+    display: block;
+  }
+}
+
 .gallery__item + .gallery__item {
   margin: 20px 0 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery__item + .gallery__item {
+    margin: 10px 0;
+  }
 }
 
 .gallery__img {
@@ -655,16 +759,59 @@ h3 span:after {
   width: 66%;
 }
 
+@media screen and (max-width: 1023px) {
+  .gallery__img.--large {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .gallery__img.--large {
+    width: 100%;
+  }
+}
+
 .gallery__img.--half {
   width: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery__img.--half {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .gallery__img.--half {
+    width: 100%;
+  }
 }
 
 .gallery__img.--small {
   width: 32%;
 }
 
+@media screen and (max-width: 1023px) {
+  .gallery__img.--small {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .gallery__img.--small {
+    width: 100%;
+  }
+}
+
 .gallery__img + .gallery__img {
   margin-left: 2%;
+}
+
+@media screen and (max-width: 599px) {
+  .gallery__img + .gallery__img {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 .gallery__special {
@@ -685,12 +832,30 @@ h3 span:after {
   padding-bottom: 130px;
 }
 
+@media screen and (max-width: 1023px) {
+  .consultation .container {
+    padding-bottom: 50px;
+  }
+}
+
 .consultation h3 {
   margin-bottom: 130px;
 }
 
+@media screen and (max-width: 1023px) {
+  .consultation h3 {
+    margin-bottom: 50px;
+  }
+}
+
 .consultation__title {
   width: 45%;
+}
+
+@media screen and (max-width: 599px) {
+  .consultation__title {
+    width: 100%;
+  }
 }
 
 h4 {
@@ -703,8 +868,21 @@ h4 {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 599px) {
+  .consultation__txt {
+    margin-top: 20px;
+  }
+}
+
 .consultation__content {
   width: 40%;
+}
+
+@media screen and (max-width: 599px) {
+  .consultation__content {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .consultation .mod_normal__btn {
@@ -716,8 +894,20 @@ h4 {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 1023px) {
+  .testimonials .container {
+    padding-bottom: 50px;
+  }
+}
+
 .testimonials h3 {
   margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1023px) {
+  .testimonials h3 {
+    margin-bottom: 50px;
+  }
 }
 
 .testimonials__list {
@@ -726,8 +916,23 @@ h4 {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 599px) {
+  .testimonials__list {
+    flex-wrap: wrap;
+  }
+}
+
 .testimonials__item {
   width: 30%;
+}
+
+@media screen and (max-width: 599px) {
+  .testimonials__item {
+    width: 100%;
+  }
+  .testimonials__item + .testimonials__item {
+    margin-top: 20px;
+  }
 }
 
 .liberty {
@@ -753,24 +958,60 @@ h4 {
   line-height: 1.25;
 }
 
+@media screen and (max-width: 599px) {
+  .liberty__txt {
+    margin-top: 20px;
+  }
+}
+
 .contact .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1023px) {
+  .contact .container {
+    padding-bottom: 50px;
+  }
 }
 
 .contact h3 {
   margin-bottom: 130px;
 }
 
+@media screen and (max-width: 1023px) {
+  .contact h3 {
+    margin-bottom: 50px;
+  }
+}
+
 .contact__title {
   width: 40%;
 }
 
+@media screen and (max-width: 599px) {
+  .contact__title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .contact__item {
+    text-align: center;
+  }
+}
+
 .contact__item + .contact__item {
   margin-top: 40px;
+}
+
+@media screen and (max-width: 599px) {
+  .contact__item + .contact__item {
+    margin-top: 10px;
+  }
 }
 
 .contact__txt {
@@ -783,6 +1024,13 @@ h4 {
 
 .contact__content {
   width: 40%;
+}
+
+@media screen and (max-width: 599px) {
+  .contact__content {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .contact__content .mod_normal__btn {
@@ -800,5 +1048,17 @@ h4 {
   color: #FFF;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__txt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .footer__txt {
+    bottom: 20px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

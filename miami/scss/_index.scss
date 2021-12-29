@@ -38,11 +38,17 @@
         // logo__img
         &__img{
             width: 115px;
+            @include mw(XS){
+                width: 55px;
+            }
         }
         // logo__txt
         &__txt{
             cursor: pointer;
             color: #CCC;
+            @include mw(XS){
+                @include fz(XS);
+            }
             &:last-child{
                 position: relative;
                 &:before{
@@ -74,10 +80,23 @@
     &__list{
         @include pos_a(bl, 60px, 0);
         @include d_f(flex, center, flex-start);
+        @include mw(L){
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include mw(XS){
+            @include fz(XS);
+        }
     }
     // header__item
     &__item{
-        cursor: pointer;
+        @include mw(L){
+            width: 30%;
+            text-align: center;
+            margin: 10px 0;
+            text-shadow: 1px 1px 0 #000;
+        }
         &:hover{
             @include fine{
                 @include color(txt, tertiary);
@@ -88,6 +107,9 @@
         }
         & + .header__item{
             margin-left: 80px;
+            @include mw(L){
+                margin: 0;
+            }
         }
     }
 }
@@ -95,16 +117,24 @@
     .container{
         @include d_f(flex, flex-start, flex-start);
         padding: 140px 0;
+        @include mw(L){
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
     }
     // intro__title
     &__title{
+        width: 40%;
+        @include mw(L){
+            width: 100%;
+            margin-bottom: 40px;
+        }
         @at-root h2,
         h3{
             @include fz(XL);
             line-height: 1.25;
             margin: 0;
         }
-        width: 40%;
         .title{
             // title__special
             &__special{
@@ -116,6 +146,9 @@
     &__content{
         width: 60%;
         line-height: 1.5;
+        @include mw(L){
+            width: 100%;
+        }
     }
     // intro__txt
     &__txt{
@@ -139,9 +172,15 @@
     position: relative;
     .container{
         padding-bottom: 90px;
+        @include mw(L){
+            padding-bottom: 40px;
+        }
     }
     h3{
         margin-bottom: 90px;
+        @include mw(L){
+            margin-bottom: 40px;
+        }
     }
     @at-root h3{
         width: 100%;
@@ -170,9 +209,15 @@
     &__item{
         &.--img{
             @include d_f(flex, center, flex-start);
+            @include mw(XS){
+                display: block;
+            }
         }
         & + .gallery__item{
             margin: 20px 0 30px;
+            @include mw(L){
+                margin: 10px 0;
+            }
         }
     }
     // gallery__img
@@ -181,15 +226,39 @@
         margin: 0;
         &.--large{
             width: 66%;
+            @include mw(L){
+                width: 49%;
+            }
+            @include mw(XS){
+                width: 100%;
+            }
         }
         &.--half{
             width: 50%;
+            @include mw(L){
+                width: 49%;
+            }
+            @include mw(XS){
+                width: 100%;
+            }
         }
         &.--small{
             width: 32%;
+            @include mw(L){
+                width: 49%;
+            }
+            @include mw(XS){
+                width: 100%;
+            }
         }
         & + .gallery__img{
             margin-left: 2%;
+            @include mw(XS){
+                margin: {
+                    top: 10px;
+                    left: 0;
+                }
+            }
         }
     }
     // gallery__special
@@ -207,13 +276,22 @@
         @include d_f(flex, flex-start, space-between);
         flex-wrap: wrap;
         padding-bottom: 130px;
+        @include mw(L){
+            padding-bottom: 50px;
+        }
     }
     h3{
         margin-bottom: 130px;
+        @include mw(L){
+            margin-bottom: 50px;
+        }
     }
     // consultation__title
     &__title{
         width: 45%;
+        @include mw(XS){
+            width: 100%;
+        }
         @at-root h4{
             @include fz(L);
         }
@@ -223,10 +301,17 @@
         @include fz(XS);
         line-height: 1.8;
         margin-top: 40px;
+        @include mw(XS){
+            margin-top: 20px;
+        }
     }
     // consultation__content
     &__content{
         width: 40%;
+        @include mw(XS){
+            width: 100%;
+            margin-top: 20px;
+        }
     }
     .mod_normal__btn{
         @include fz(XS);
@@ -236,17 +321,32 @@
 .testimonials{
     .container{
         padding-bottom: 100px;
+        @include mw(L){
+            padding-bottom: 50px;
+        }
     }
     h3{
         margin-bottom: 90px;
+        @include mw(L){
+            margin-bottom: 50px;
+        }
     }
     // testimonials__list
     &__list{
         @include d_f(flex, flex-start, space-between);
+        @include mw(XS){
+            flex-wrap: wrap;
+        }
     }
     // testimonials__item
     &__item{
         width: 30%;
+        @include mw(XS){
+            width: 100%;
+            & + &{
+                margin-top: 20px;
+            }
+        }
         @at-root .liberty{
             text-align: center;
             // liberty__img
@@ -266,31 +366,45 @@
             &__txt{
                 margin-top: 40px;
                 line-height: 1.25;
+                @include mw(XS){
+                    margin-top: 20px;
+                }
             }
         }
     }
 }
 .contact{
     .container{
-        @include d_f(flex, center, space-between);
+        @include d_f(flex, flex-start, space-between);
         flex-wrap: wrap;
         padding-bottom: 100px;
+        @include mw(L){
+            padding-bottom: 50px;
+        }
     }
     h3{
         margin-bottom: 130px;
+        @include mw(L){
+            margin-bottom: 50px;
+        }
     }
     // contact__title
     &__title{
         width: 40%;
-    }
-    // contact__list
-    &__list{
-
+        @include mw(XS){
+            width: 100%;
+        }
     }
     // contact__item
     &__item{
+        @include mw(XS){
+            text-align: center;
+        }
         & + &{
             margin-top: 40px;
+            @include mw(XS){
+                margin-top: 10px;
+            }
         }
     }
     // contact__txt
@@ -303,6 +417,10 @@
     // contact__content
     &__content{
         width: 40%;
+        @include mw(XS){
+            width: 100%;
+            margin-top: 20px;
+        }
         .mod_normal__btn{
             width: 100%;
         }
@@ -316,5 +434,11 @@
         @include color(txt, secondary);
         text-align: center;
         width: 100%;
+        @include mw(L){
+            @include fz(XS);
+        }
+        @include mw(XS){
+            bottom: 20px;
+        }
     }
 }

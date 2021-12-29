@@ -47,10 +47,10 @@ $fontsize: (
 
 // RWD相關
 $breakpoints: (
-	XL: 1260px,
-	L: 1024px,
-	M: 996px,
-	S: 768px,
+	XL: 1259px,
+	L: 1023px,
+	M: 995px,
+	S: 767px,
 	XS: 599px
 );
 @mixin mw($size){
