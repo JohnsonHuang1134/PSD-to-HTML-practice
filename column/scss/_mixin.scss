@@ -1,0 +1,110 @@
+// 定位
+@function pos-chtext($data) {
+    @if $data=='T' {
+        @return top;
+    }
+    @else if $data=='R' {
+        @return right;
+    }
+    @else if $data=='B' {
+        @return bottom;
+    }
+    @else if $data=='L' {
+        @return left;
+    }
+}
+@mixin pos_a ($direction, $val...) {
+	position: absolute;
+
+    $result: ();
+    $data: to-upper-case($direction);
+    @for $i from 1 through str-length($data) {
+        $result: append($result, str-slice($data, $i, $i));
+        #{pos-chtext(nth($result, $i))}:#{if(length($val)==1,$val,nth($val,$i))};
+    }
+}
+
+
+@mixin d_f($flex, $ai, $jc) {
+	display: $flex;
+	align-items: $ai;
+	justify-content: $jc;
+}
+
+
+// 字體大小
+$fontsize: (
+	XL: 48px,
+	L: 24px,
+	M: 16px,
+	S: 14px,
+	XS: 12px
+);
+@mixin fz($size){
+    font-size: map-get($fontsize, $size);
+}
+
+
+// RWD相關
+$breakpoints: (
+	XL: 1259px,
+	L: 1023px,
+	M: 995px,
+	S: 767px,
+	XS: 599px
+);
+@mixin mw($size){
+    @media screen and (max-width: map-get($breakpoints, $size)) {
+		@content;
+	}
+}
+
+
+$txt_color: (
+    primary: #000,
+    secondary: #FFF,
+    tertiary: #00aaef
+);
+$bg_color: (
+    primary: #EEE,
+    secondary: #FFF,
+    tertiary: #00aaef
+);
+@mixin color($target, $color){
+    @if $target == 'txt' {
+        color: map-get($txt_color, $color);
+    }
+    @else if $target == 'bg' {
+        background-color: map-get($bg_color, $color);
+    }
+}
+
+
+// 僅在pc顯示
+@mixin fine {
+	@media (pointer: fine) and (max-resolution: 2dppx),
+	screen and (pointer: fine) and (-webkit-max-device-pixel-ratio: 2),
+	(-moz-touch-enabled: 0){
+		@content;
+	}
+}
+// 僅在ph顯示
+@mixin coarse{
+	@media (pointer: coarse),
+	(-moz-touch-enabled: 1),
+	screen and (pointer: fine) and (min-resolution: 2dppx) and (max-width: 1023px){
+		@content;
+	}
+}
+
+
+@mixin hover{
+    &:hover{
+        @include fine{
+            @content;
+        }
+    }
+    &:active{
+        @content;
+    }
+}

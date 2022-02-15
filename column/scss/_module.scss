@@ -1,0 +1,29 @@
+.mod{
+    // mod_normal__btn
+    &_normal__btn{
+        @include fz(S);
+        @include color(txt, secondary);
+        @include color(bg, tertiary);
+        padding: 20px 0;
+        width: 100%;
+        cursor: pointer;
+        @include hover{
+            opacity: .8;
+        }
+    }
+    // mod_normal__input
+    &_normal__input{
+        @include fz(XS);
+        @include color(txt, primary);
+        @include color(bg, primary);
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+        &::placeholder{
+            @include color(txt, primary);
+        }
+    }
+}
